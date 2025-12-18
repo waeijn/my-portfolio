@@ -45,5 +45,5 @@ export const personalInfo = {
     email: "mailto:johnwaynelandong@gmail.com",
   },
 
-  resume: "public/resume/johnwaynelandong_resume.pdf",
+  resume: "/resume/johnwaynelandong_resume.pdf",
 };
