@@ -12,10 +12,10 @@ function EmailModal({ isOpen, onClose }) {
 
     emailjs
       .sendForm(
-        "service_1z4r8bk",
-        "template_55ro2az",
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         form.current,
-        "86nCPm2DwxXAPm2Ui"
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(() => {
         setStatus("success");

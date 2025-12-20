@@ -28,7 +28,7 @@ export const experiences = [
     company: "University of Cabuyao - College of Computing Studies",
     location: "Cabuyao, Laguna, Philippines",
     type: "Student Leadership",
-    duration: "November 2023 - Present",
+    duration: "August 2023 - Present",
     current: true,
     description:
       "Participated in various academic projects and developed applications as part of coursework and extracurricular activities, focusing on practical software development and team leadership.",
