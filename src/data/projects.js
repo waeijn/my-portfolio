@@ -19,26 +19,21 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Forecast",
+    title: "Inventory Reorder Prediction System",
     description:
-      "An elegant, responsive weather application that fetches and displays real-time weather data and 5-day forecasts by integrating third-party APIs.",
+      "An AI-powered inventory management dashboard that uses TensorFlow.js to predict stock reorder needs based on sales velocity and lead times.",
     longDescription:
-      "Demonstrates strong skills in asynchronous data fetching (AJAX/Fetch), state management in React, and clean, modular component design, using Tailwind CSS for rapid styling.",
-    technologies: [
-      "React",
-      "JavaScript",
-      "RESTful APIs",
-      "HTML/CSS",
-      "TensorFlow",
-    ],
+      "A sophisticated data visualization tool that integrates machine learning directly in the browser. It analyzes current stock levels, average weekly sales, and supplier lead times to calculate 'Days of Stock' and provide real-time reorder urgency and confidence scores.",
+    technologies: ["React", "TensorFlow.js", "Laravel", "Bootstrap"],
     features: [
-      "Real-time data fetching",
-      "Geolocator search",
-      "Responsive design",
+      "On-device Model Training",
+      "Predictive Inventory Analytics",
+      "Real-time Data Filtering",
+      "Urgency & Confidence Scoring",
     ],
-    github: "https://github.com/waeijn/forecast",
-    status: "Completed",
-    date: "November 2025",
+    github: "https://github.com/waeijn/forecast-inventory-reorder",
+    status: "In Progress",
+    date: "January 2026",
   },
   {
     id: 3,
