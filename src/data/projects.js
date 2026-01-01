@@ -19,21 +19,21 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Inventory Reorder Prediction System",
+    title: "Forecast",
     description:
       "An AI-powered inventory management dashboard that uses TensorFlow.js to predict stock reorder needs based on sales velocity and lead times.",
     longDescription:
       "A sophisticated data visualization tool that integrates machine learning directly in the browser. It analyzes current stock levels, average weekly sales, and supplier lead times to calculate 'Days of Stock' and provide real-time reorder urgency and confidence scores.",
-    technologies: ["React", "TensorFlow.js", "Laravel", "Bootstrap"],
+    technologies: ["React", "TensorFlow.js", "Bootstrap", "Laravel"],
     features: [
       "On-device Model Training",
       "Predictive Inventory Analytics",
       "Real-time Data Filtering",
       "Urgency & Confidence Scoring",
     ],
-    github: "https://github.com/waeijn/forecast-inventory-reorder",
-    status: "In Progress",
-    date: "January 2026",
+    github: "https://github.com/waeijn/forecast",
+    status: "Completed",
+    date: "November 2025",
   },
   {
     id: 3,
