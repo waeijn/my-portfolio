@@ -14,3 +14,4 @@ export * from "./ExternalLinkIcon";
 export * from "./MailIcon";
 export * from "./DownloadIcon";
 export * from "./XIcon";
+export * from "./MenuIcon";
