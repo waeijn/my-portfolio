@@ -10,6 +10,7 @@ export const technologies = {
         { name: "JavaScript (ES6+)" },
         { name: "Tailwind CSS" },
         { name: "Bootstrap" },
+        { name: "Responsive Web Design" },
       ],
     },
     {
@@ -26,7 +27,12 @@ export const technologies = {
     {
       name: "Data & Databases",
       icon: "<DatabaseIcon />",
-      skills: [{ name: "MySQL" }, { name: "PostgreSQL" }, { name: "MongoDB" }],
+      skills: [
+        { name: "MySQL" },
+        { name: "PostgreSQL" },
+        { name: "MongoDB" },
+        { name: "Data Collection & Analysis" },
+      ],
     },
     {
       name: "Infrastructure & Tools",
@@ -40,16 +46,35 @@ export const technologies = {
         { name: "Virtual Machine" },
         { name: "Packet Tracer" },
         { name: "Amazon Web Services (AWS)" },
+        { name: "Linux Administration" },
       ],
     },
     {
       name: "Cybersecurity",
       icon: "<ShieldIcon />",
       skills: [
-        { name: "Authentication" },
+        { name: "Identity & Access Management (IAM)" },
+        { name: "Network Security" },
+        { name: "Threat & Vulnerability Management" },
+        { name: "Compliance Frameworks (GDPR/HIPAA)" },
+        { name: "Authentication & MFA" },
         { name: "Penetration Testing" },
         { name: "Nmap" },
+        { name: "Wireshark" },
         { name: "Linux/Shell Scripting" },
+        { name: "Incident Response" },
+      ],
+    },
+    {
+      name: "Process Improvement",
+      icon: "<TrendingUpIcon />",
+      skills: [
+        { name: "Lean Six Sigma Methodology" },
+        { name: "DMAIC Framework" },
+        { name: "Root Cause Analysis (5 Whys/Fishbone)" },
+        { name: "Process Mapping" },
+        { name: "Waste Identification" },
+        { name: "Continuous Improvement" },
       ],
     },
   ],

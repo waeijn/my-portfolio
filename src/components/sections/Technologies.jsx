@@ -6,6 +6,7 @@ import {
   DatabaseIcon,
   ToolIcon,
   ShieldIcon,
+  TrendingUpIcon,
 } from "../../assets/icons";
 
 function Technologies() {
@@ -15,6 +16,7 @@ function Technologies() {
     "Data & Databases": DatabaseIcon,
     "Infrastructure & Tools": ToolIcon,
     Cybersecurity: ShieldIcon,
+    "Process Improvement": TrendingUpIcon,
   };
 
   return (
