@@ -1,6 +1,44 @@
 export const projects = [
   {
     id: 1,
+    title: "Adaptive API Rate Limiting System",
+    description:
+      "An intelligent intrusion detection and prevention system implementing adaptive rate limiting through heuristic pattern classification and token bucket optimization algorithms.",
+    longDescription:
+      "Undergraduate thesis project developing an advanced IDS/IPS solution that dynamically adjusts API rate limits based on real-time traffic patterns. The system employs machine learning-based heuristic classification to distinguish legitimate traffic from potential threats, combined with an optimized token bucket algorithm for granular traffic control and DDoS mitigation.",
+    technologies: ["Python", "Machine Learning", "Redis", "Docker", "FastAPI"],
+    features: [
+      "Heuristic Pattern Classification",
+      "Dynamic Rate Limit Adjustment",
+      "Real-time Threat Detection",
+      "Token Bucket Optimization",
+      "Anomaly Detection & Logging",
+    ],
+    github: "https://github.com/waeijn/adaptive-rate-limiting",
+    status: "In Progress",
+    date: "January 2026 - Present",
+  },
+  {
+    id: 2,
+    title: "Secure Enterprise Network Hardening Lab",
+    description:
+      "A comprehensive month-long cybersecurity project focused on designing, implementing, and hardening a simulated enterprise network infrastructure using Cisco Packet Tracer.",
+    longDescription:
+      "Hands-on security lab demonstrating enterprise-grade network architecture with emphasis on defense-in-depth strategies. Implemented VLANs, ACLs, port security, AAA authentication, and secure routing protocols. Conducted attack-defense scenarios including penetration testing simulations, documented security policies, and created comprehensive network hardening procedures following industry best practices.",
+    technologies: ["Cisco Packet Tracer", "Network Security", "ACLs", "VLANs"],
+    features: [
+      "Secure Network Architecture Design",
+      "Device Hardening & Access Control",
+      "VLAN Segmentation & Port Security",
+      "Attack-Defense Scenario Testing",
+      "Security Policy Documentation",
+    ],
+    github: "https://github.com/waeijn/secure-enterprise-network-lab",
+    status: "In Progress",
+    date: "February 2026 - Present",
+  },
+  {
+    id: 3,
     title: "AuraTech",
     description:
       "A high-performance e-commerce platform specializing in premium tech gadgets, featuring a modern UI/UX and a seamless shopping experience.",
@@ -14,11 +52,11 @@ export const projects = [
       "User Authentication & Order History",
     ],
     github: "https://github.com/waeijn/auratech",
-    status: "In Progress",
+    status: "Completed",
     date: "December 2025",
   },
   {
-    id: 2,
+    id: 4,
     title: "Forecast",
     description:
       "An AI-powered inventory management dashboard that uses TensorFlow.js to predict stock reorder needs based on sales velocity and lead times.",
@@ -36,7 +74,7 @@ export const projects = [
     date: "November 2025",
   },
   {
-    id: 3,
+    id: 5,
     title: "PageTurn",
     description:
       "A robust Java-based Point of Sale system designed for bookstores to manage inventory, process sales transactions, and generate digital receipts.",
@@ -54,7 +92,7 @@ export const projects = [
     date: "September 2024",
   },
   {
-    id: 4,
+    id: 6,
     title: "FoodFiesta",
     description:
       "A comprehensive e-commerce platform focused on food delivery and management, featuring user authentication and a streamlined ordering process.",

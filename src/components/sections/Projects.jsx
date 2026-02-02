@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { projects } from "../../data/projects";
 import { GithubIcon } from "../../assets/icons";
+import ProjectGalleryModal from "./modals/ProjectGalleryModal";
 
 function Projects() {
+  const [isGalleryOpen, setIsGalleryOpen] = useState(false);
+
+  const featuredProjects = projects.slice(0, 4);
+
   return (
     <section id="projects" className="px-6 py-20 bg-bg-light dark:bg-bg-dark">
       <div className="max-w-7xl mx-auto">
@@ -19,9 +24,9 @@ function Projects() {
           <div className="w-24 h-1 bg-accent-light dark:bg-accent-dark mx-auto mt-6 rounded-full"></div>
         </div>
 
-        {/* Simplified Project Grid */}
+        {/* Featured Projects Grid - Top 4 */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {projects.map((project) => (
+          {featuredProjects.map((project) => (
             <div
               key={project.id}
               className="bg-bg-light-surface dark:bg-bg-dark-surface p-8 rounded-2xl border border-border-light dark:border-border-dark hover:border-accent-light dark:hover:border-accent-dark transition-all flex flex-col group"
@@ -82,7 +87,25 @@ function Projects() {
             </div>
           ))}
         </div>
+
+        {/* "See All" Action Button */}
+        {projects.length > 4 && (
+          <div className="mt-12 text-center">
+            <button
+              onClick={() => setIsGalleryOpen(true)}
+              className="px-10 py-4 border-2 border-accent-light dark:border-accent-dark text-accent-light dark:text-accent-dark font-bold rounded-xl hover:bg-accent-light dark:hover:bg-accent-dark hover:text-white dark:hover:text-bg-dark transition-all duration-300"
+            >
+              See All Projects
+            </button>
+          </div>
+        )}
       </div>
+
+      {/* Modal for full list */}
+      <ProjectGalleryModal
+        isOpen={isGalleryOpen}
+        onClose={() => setIsGalleryOpen(false)}
+      />
     </section>
   );
 }
