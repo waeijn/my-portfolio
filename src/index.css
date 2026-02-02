@@ -23,13 +23,13 @@
     @apply scroll-mt-20;
   }
 
-  /* Custom scrollbar - Dark mode */
+  /* Custom scrollbar - Subtle grays */
   ::-webkit-scrollbar {
     @apply w-2;
   }
 
   ::-webkit-scrollbar-track {
-    @apply bg-bg-light-surface dark:bg-bg-dark-surface;
+    @apply bg-bg-light dark:bg-bg-dark;
   }
 
   ::-webkit-scrollbar-thumb {
@@ -37,12 +37,12 @@
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-text-light-muted dark:bg-text-dark-muted;
+    @apply bg-accent-light dark:bg-accent-dark;
   }
 
-  /* Selection */
+  /* Selection - Subtle accent highlight */
   ::selection {
-    @apply bg-accent-light/20 dark:bg-accent-dark/20;
+    @apply bg-accent-light/10 dark:bg-accent-dark/20;
   }
 }
 
@@ -79,5 +79,6 @@
 
   .card:hover {
     @apply border-accent-light dark:border-accent-dark;
+    @apply shadow-lg;
   }
 }
