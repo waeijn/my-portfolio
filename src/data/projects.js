@@ -6,7 +6,7 @@ export const projects = [
       "An intelligent intrusion detection and prevention system implementing adaptive rate limiting through heuristic pattern classification and token bucket optimization algorithms.",
     longDescription:
       "Undergraduate thesis project developing an advanced IDS/IPS solution that dynamically adjusts API rate limits based on real-time traffic patterns. The system employs machine learning-based heuristic classification to distinguish legitimate traffic from potential threats, combined with an optimized token bucket algorithm for granular traffic control and DDoS mitigation.",
-    technologies: ["Python", "Machine Learning", "Redis", "Docker", "FastAPI"],
+    technologies: ["Python", "Redis", "Docker", "Locust", "FastAPI"],
     features: [
       "Heuristic Pattern Classification",
       "Dynamic Rate Limit Adjustment",

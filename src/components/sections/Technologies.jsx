@@ -11,12 +11,12 @@ import {
 
 function Technologies() {
   const iconMap = {
-    "Frontend Development": CodeIcon,
-    "Backend Development": SettingsIcon,
-    "Data & Databases": DatabaseIcon,
+    "Frontend & Design": CodeIcon,
+    "Backend & Intelligent Systems": SettingsIcon,
+    "Data & Storage": DatabaseIcon,
     "Infrastructure & Tools": ToolIcon,
-    Cybersecurity: ShieldIcon,
-    "Process Improvement": TrendingUpIcon,
+    "Cybersecurity & Networking": ShieldIcon,
+    "Leadership & Research": TrendingUpIcon,
   };
 
   return (

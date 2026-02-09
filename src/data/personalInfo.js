@@ -2,40 +2,38 @@ export const personalInfo = {
   name: "John Wayne Landong",
   firstName: "John Wayne",
   lastName: "Landong",
-  title: "Junior Computer Science Student",
-  subtitle: "Aspiring Software Engineer & Cybersecurity Engineer",
+  title: "Computer Science Student",
+  subtitle: "Aspiring Software Engineer & Cybersecurity Professional",
   email: "johnwaynelandong@gmail.com",
   location: "Cabuyao, Laguna, Philippines",
   timezone: "GMT+8 (PST)",
 
   // Hero Section Bio
-  bio: "I’m a Computer Science student passionate about building secure, scalable software and exploring the intersection of software engineering and cybersecurity. I enjoy turning ideas into practical, well-engineered solutions.",
+  bio: "Computer Science student focused on building secure, scalable software. I enjoy turning complex ideas into practical, well-engineered solutions.",
 
   about: {
     // Introduction
     introduction:
-      "I’m driven by curiosity and a love for problem-solving, especially when it comes to creating software that’s both functional and secure. I value clean design, thoughtful architecture, and continuous learning.",
+      "I’m a problem-solver at heart. I value clean design and thoughtful architecture, aiming to build software that is both useful and resilient.",
 
     // Background
     background:
-      "I’m currently a third-year Computer Science student, developing projects across web, backend, and systems while building a strong foundation in cybersecurity and networking. My goal is to grow into a well-rounded engineer who understands both how systems are built and how they’re protected.",
+      "Currently in my third year, I work across web and systems development. My focus has shifted toward cybersecurity and networking—I enjoy digging into how systems are built and learning how to make them more secure.",
 
     // Values
     values:
-      "I believe good software is built with intention—clean, secure, and maintainable—while keeping the user and long-term impact in mind. I value discipline, continuous learning, and responsibility in both code and collaboration.",
+      "I believe software should be intentional. To me, that means writing code that is clean, secure, and easy for others to maintain.",
 
     // Beyond Coding
     beyondCoding:
-      "Outside of coding, I enjoy reading, playing guitar, exploring game development, and learning about technology trends and security practices. These interests help me stay creative, focused, and balanced.",
+      "When I’m not at my desk, you’ll find me playing guitar, reading, or exploring cinema. I also follow the gaming industry and emerging tech to stay creative and keep a pulse on what's next.",
 
     // Interests
     interests: [
-      "Software Engineering",
       "Cybersecurity",
-      "Web Development",
-      "System Design",
       "Networking",
-      "Game Development",
+      "Software Engineering",
+      "Cloud Computing",
     ],
   },
 
