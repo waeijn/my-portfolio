@@ -20,7 +20,7 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Secure Enterprise Network Hardening Lab",
+    title: "Secure Enterprise Network Lab",
     description:
       "A comprehensive month-long cybersecurity project focused on designing, implementing, and hardening a simulated enterprise network infrastructure using Cisco Packet Tracer.",
     longDescription:
@@ -41,7 +41,7 @@ export const projects = [
     id: 3,
     title: "AuraTech",
     description:
-      "A high-performance e-commerce platform specializing in premium tech gadgets, featuring a modern UI/UX and a seamless shopping experience.",
+      "An e-commerce platform specializing in premium tech gadgets, featuring a modern UI/UX and a seamless shopping experience.",
     longDescription:
       "AuraTech is a full-stack digital storefront built to handle tech inventory. It integrates a secure payment gateway, dynamic product filtering for hardware specs, and a responsive admin dashboard for real-time order tracking and stock management.",
     technologies: ["React", "Bootstrap", "Laravel", "phpMyAdmin", "Docker"],
