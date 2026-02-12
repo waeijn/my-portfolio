@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: 1,
-    title: "Adaptive API Rate Limiting System",
+    title: "Adaptive API Rate Limiter",
     description:
       "An intelligent intrusion detection and prevention system implementing adaptive rate limiting through heuristic pattern classification and token bucket optimization algorithms.",
     longDescription:
@@ -14,9 +14,9 @@ export const projects = [
       "Token Bucket Optimization",
       "Anomaly Detection & Logging",
     ],
-    github: "https://github.com/waeijn/adaptive-rate-limiting",
+    github: "https://github.com/waeijn/adaptive-api-rate-limiter",
     status: "In Progress",
-    date: "January 2026 - Present",
+    date: "Present",
   },
   {
     id: 2,
@@ -35,7 +35,7 @@ export const projects = [
     ],
     github: "https://github.com/waeijn/secure-enterprise-network-lab",
     status: "In Progress",
-    date: "February 2026 - Present",
+    date: "Present",
   },
   {
     id: 3,
