@@ -63,8 +63,9 @@ function Contact() {
           <span className="text-accent-light dark:text-accent-dark">Touch</span>
         </h1>
         <p className="text-xl text-text-light-secondary dark:text-text-dark-secondary max-w-2xl mx-auto mb-12">
-          I am currently open to new opportunities. Feel free to connect or drop
-          a message!
+          I am currently open to new opportunities and experiences.
+          <br />
+          Feel free to connect or drop a message!
         </p>
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">

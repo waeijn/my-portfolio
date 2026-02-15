@@ -33,8 +33,8 @@ function Technologies() {
             </span>
           </h1>
           <p className="text-text-light-secondary dark:text-text-dark-secondary text-lg max-w-2xl mx-auto">
-            Here are the technologies and tools I am practicing and working with
-            to bring ideas to life.
+            Technologies and tools I am practicing and working with to bring
+            ideas to life.
           </p>
           <div className="w-24 h-1 bg-accent-light dark:bg-accent-dark mx-auto mt-6 rounded-full"></div>
         </div>

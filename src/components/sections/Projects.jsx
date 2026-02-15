@@ -13,13 +13,13 @@ function Projects() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-bold mb-4">
-            My{" "}
+            Recent{" "}
             <span className="text-accent-light dark:text-accent-dark">
               Projects
             </span>
           </h1>
           <p className="text-text-light-secondary dark:text-text-dark-secondary text-lg max-w-2xl mx-auto">
-            A showcase of my work and technical contributions.
+            A showcase of my latest work and technical contributions.
           </p>
           <div className="w-24 h-1 bg-accent-light dark:bg-accent-dark mx-auto mt-6 rounded-full"></div>
         </div>

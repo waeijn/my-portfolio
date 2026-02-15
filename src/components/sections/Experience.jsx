@@ -18,8 +18,7 @@ function Experience() {
             </span>
           </h1>
           <p className="text-text-light-secondary dark:text-text-dark-secondary text-lg max-w-2xl mx-auto">
-            My journey in software development and the leadership roles that are
-            shaping my skills.
+            Professional experience and roles where I've applied my skills.
           </p>
           <div className="w-24 h-1 bg-accent-light dark:bg-accent-dark mx-auto mt-6 rounded-full"></div>
         </div>

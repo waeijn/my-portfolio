@@ -31,8 +31,6 @@ export const technologies = {
       skills: [
         { name: "Redis" },
         { name: "MySQL" },
-        { name: "PostgreSQL" },
-        { name: "MongoDB" },
         { name: "Relational Database Design" },
       ],
     },
