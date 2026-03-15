@@ -34,8 +34,8 @@ export const projects = [
       "Security Policy Documentation",
     ],
     github: "https://github.com/waeijn/secure-enterprise-network-lab",
-    status: "In Progress",
-    date: "Present",
+    status: "Completed",
+    date: "March 2026",
   },
   {
     id: 3,
