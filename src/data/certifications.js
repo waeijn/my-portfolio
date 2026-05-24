@@ -1,6 +1,23 @@
 export const certifications = [
   {
     id: 1,
+    title: "Connect and Protect: Networks and Network Security",
+    issuer: "Google",
+    date: "May 2026",
+    id_code: "CE16EWY4U20I",
+    description:
+      "Covered network components, data transmission protocols, system hardening techniques, and strategies to secure networks against intrusion tactics.",
+    skills: [
+      "Network Security",
+      "Intrusion Detection",
+      "Virtual Private Networks (VPN)",
+      "Network Protocols",
+      "Vulnerability Assessments",
+    ],
+    link: "https://coursera.org/share/486f02e6b0671aeb44b45b41569c28da",
+  },
+  {
+    id: 2,
     title: "Play It Safe: Manage Security Risks",
     issuer: "Google",
     date: "May 2026",
@@ -14,10 +31,10 @@ export const certifications = [
       "Threat Detection",
       "Security Management",
     ],
-    link: "https://www.coursera.org/account/accomplishments/records/DYOSCFL0LMQY",
+    link: "https://coursera.org/share/21325d834ca8499322b5567b44518bed",
   },
   {
-    id: 2,
+    id: 3,
     title: "Foundations of Cybersecurity",
     issuer: "Google",
     date: "April 2026",
@@ -31,10 +48,10 @@ export const certifications = [
       "Information Assurance",
       "Data Ethics",
     ],
-    link: "https://www.coursera.org/account/accomplishments/records/UM2HH8CF975O",
+    link: "https://coursera.org/share/a9c49e2ec70ac91fc03755712a4245b9",
   },
   {
-    id: 3,
+    id: 4,
     title: "IT Fundamentals for Cybersecurity Specialization",
     issuer: "IBM",
     date: "January 2026",
@@ -50,7 +67,7 @@ export const certifications = [
     link: "https://coursera.org/share/0ebc47a0e600a3edefa54b797b6f3bf6",
   },
   {
-    id: 4,
+    id: 5,
     title: "Introduction to Cybersecurity Tools & Cyberattacks",
     issuer: "IBM",
     date: "January 2026",
@@ -65,7 +82,7 @@ export const certifications = [
     link: "https://coursera.org/share/8021c267c1af12cdf0809757ab9d12bb",
   },
   {
-    id: 5,
+    id: 6,
     title: "Operating Systems: Overview, Administration, and Security",
     issuer: "IBM",
     date: "January 2026",
@@ -80,7 +97,7 @@ export const certifications = [
     link: "https://coursera.org/share/d93c748ca3751f5444307e479b36ae3b",
   },
   {
-    id: 6,
+    id: 7,
     title: "Cybersecurity Compliance Framework, Standards & Regulations",
     issuer: "IBM",
     date: "January 2026",
@@ -90,7 +107,7 @@ export const certifications = [
     link: "https://coursera.org/share/9d257b89a3e39f4fbfabc4ff3194fa7f",
   },
   {
-    id: 7,
+    id: 8,
     title: "Computer Networks and Network Security",
     issuer: "IBM",
     date: "January 2026",
@@ -105,7 +122,7 @@ export const certifications = [
     link: "https://coursera.org/share/bb0293d032fe0b139b3a3d516ed2821e",
   },
   {
-    id: 8,
+    id: 9,
     title: "Lean Six Sigma Yellow Belt",
     issuer: "MF Treinamentos",
     date: "January 2026",
@@ -115,7 +132,7 @@ export const certifications = [
     link: "",
   },
   {
-    id: 9,
+    id: 10,
     title: "Lean Six Sigma White Belt",
     issuer: "MF Treinamentos",
     date: "January 2026",
@@ -125,7 +142,7 @@ export const certifications = [
     link: "",
   },
   {
-    id: 10,
+    id: 11,
     title: "Networking Basics",
     issuer: "Cisco Networking Academy",
     date: "January 2026",
@@ -135,7 +152,7 @@ export const certifications = [
     link: "https://www.credly.com/badges/9ba7b187-046c-4732-873d-c0ef11275298/public_url",
   },
   {
-    id: 11,
+    id: 12,
     title: "Introduction to Cybersecurity",
     issuer: "Cisco Networking Academy",
     date: "December 2025",
@@ -145,7 +162,7 @@ export const certifications = [
     link: "https://www.credly.com/badges/f30e0048-38ba-4646-b125-c51baa80e5a7/public_url",
   },
   {
-    id: 12,
+    id: 13,
     title: "Graphic Design Essentials",
     issuer: "Canva Design School",
     date: "December 2025",
@@ -155,7 +172,7 @@ export const certifications = [
     link: "https://www.canva.com/design-school/certification-award/c7ecf0ca-4b4d-4d47-af1b-4702bf87ef49",
   },
   {
-    id: 13,
+    id: 14,
     title: "The Field Guide to Human-Centered Design",
     issuer: "Canva Design School",
     date: "December 2025",
@@ -165,7 +182,7 @@ export const certifications = [
     link: "https://www.canva.com/design-school/certification-award/56a4e5af-d84d-4869-b54a-f73705915ff1",
   },
   {
-    id: 14,
+    id: 15,
     title: "Legacy Responsive Web Design V8",
     issuer: "freeCodeCamp",
     date: "December 2024",
