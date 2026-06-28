@@ -16,10 +16,36 @@ export const projects = [
     ],
     github: "https://github.com/waeijn/adaptive-api-rate-limiter",
     status: "In Progress",
-    date: "Present",
+    date: "January 2026 – Present",
   },
   {
     id: 2,
+    title: "SOC Home Lab",
+    description:
+      "A multi-VM Security Operations Center lab simulating real-world attack detection using Splunk SIEM, built across an isolated virtualized network.",
+    longDescription:
+      "A hands-on SOC environment built with VirtualBox, combining Ubuntu Server, Windows 10, and Kali Linux across an isolated Host-Only network. Splunk Enterprise was deployed as the SIEM, ingesting real-time Windows endpoint logs via Splunk Universal Forwarder. Simulated attacks including Nmap network reconnaissance and Hydra-based RDP brute force were executed against the Windows target, with custom SPL detection rules authored to identify port scanning, failed logon spikes, and successful brute force patterns. The project is being extended with Sysmon telemetry, Python-based threat intelligence automation via the VirusTotal API, and a full incident response workflow.",
+    technologies: [
+      "Splunk",
+      "VirtualBox",
+      "Kali Linux",
+      "SPL",
+      "Windows Server",
+      "Ubuntu Server",
+    ],
+    features: [
+      "Multi-VM Isolated SOC Environment",
+      "Splunk SIEM Log Ingestion & Indexing",
+      "Simulated Network Reconnaissance & Brute Force Attacks",
+      "Custom SPL Detection Rules",
+      "Attack-to-Detection Verification Workflow",
+    ],
+    github: "https://github.com/waeijn/soc-home-lab",
+    status: "In Progress",
+    date: "May 2026 – Present",
+  },
+  {
+    id: 3,
     title: "Secure Enterprise Network Lab",
     description:
       "A comprehensive month-long cybersecurity project focused on designing, implementing, and hardening a simulated enterprise network infrastructure using Cisco Packet Tracer.",
@@ -38,7 +64,7 @@ export const projects = [
     date: "March 2026",
   },
   {
-    id: 3,
+    id: 4,
     title: "AuraTech",
     description:
       "An e-commerce platform specializing in premium tech gadgets, featuring a modern UI/UX and a seamless shopping experience.",
@@ -56,7 +82,7 @@ export const projects = [
     date: "December 2025",
   },
   {
-    id: 4,
+    id: 5,
     title: "Forecast",
     description:
       "An AI-powered inventory management dashboard that uses TensorFlow.js to predict stock reorder needs based on sales velocity and lead times.",
@@ -74,7 +100,7 @@ export const projects = [
     date: "November 2025",
   },
   {
-    id: 5,
+    id: 6,
     title: "PageTurn",
     description:
       "A robust Java-based Point of Sale system designed for bookstores to manage inventory, process sales transactions, and generate digital receipts.",
@@ -92,7 +118,7 @@ export const projects = [
     date: "September 2024",
   },
   {
-    id: 6,
+    id: 7,
     title: "FoodFiesta",
     description:
       "A comprehensive e-commerce platform focused on food delivery and management, featuring user authentication and a streamlined ordering process.",
