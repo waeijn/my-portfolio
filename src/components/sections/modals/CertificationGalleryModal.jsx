@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { certifications } from "../../../data/certifications";
 import { ExternalLinkIcon, XIcon } from "../../../assets/icons";
 
 function CertificationGalleryModal({ isOpen, onClose }) {
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen]);
+
   if (!isOpen) return null;
 
   return (

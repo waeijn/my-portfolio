@@ -3,7 +3,7 @@ export const certifications = [
     id: 1,
     title: "Google Cybersecurity Professional Certificate",
     issuer: "Google",
-    date: "In Progress",
+    date: "July 2026",
     description:
       "A nine-course professional certificate covering foundations of cybersecurity, risk management, network security, Linux and SQL, threat detection, and incident response using industry-standard tools.",
     skills: [
@@ -17,7 +17,7 @@ export const certifications = [
       "Vulnerability Assessments",
       "Information Assurance",
     ],
-    link: "",
+    link: "https://coursera.org/share/3d8446c8519741e8f032d03bfec24b48",
   },
   {
     id: 2,

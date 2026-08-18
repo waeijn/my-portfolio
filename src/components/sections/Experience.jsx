@@ -1,10 +1,122 @@
-import React from "react";
+import React, { useState } from "react";
 import { experiences } from "../../data/experience";
 import {
   MapPinIcon,
   ClockIcon,
   ChevronDoubleRightIcon,
 } from "../../assets/icons";
+
+function ExperienceCard({ exp }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div
+      className="bg-bg-light-surface dark:bg-bg-dark-surface rounded-2xl border border-border-light dark:border-border-dark hover:border-accent-light dark:hover:border-accent-dark transition-all p-8 cursor-pointer"
+      onClick={() => setIsOpen(!isOpen)}
+    >
+      {/* Header (Always Visible) */}
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <h2 className="text-2xl font-bold text-text-light-primary dark:text-text-dark-primary mb-2">
+            {exp.position}
+          </h2>
+          <h3 className="text-xl text-accent-light dark:text-accent-dark font-semibold">
+            {exp.company}
+          </h3>
+          <div className="flex items-center gap-2 text-text-light-secondary dark:text-text-dark-secondary text-sm mt-2">
+            <ClockIcon className="w-4 h-4 text-accent-light dark:text-accent-dark" />
+            <span>{exp.duration}</span>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-4 self-start md:self-auto">
+          <span
+            className={
+              "px-4 py-2 rounded-lg text-sm font-bold transition-all whitespace-nowrap " +
+              (exp.current
+                ? "bg-accent-light dark:bg-accent-dark text-white dark:text-bg-dark animate-pulse-slow"
+                : "bg-bg-light dark:bg-bg-dark text-text-light-secondary dark:text-text-dark-secondary border border-border-light dark:border-border-dark")
+            }
+          >
+            {exp.current ? "Current" : exp.type}
+          </span>
+          <svg
+            className={`w-6 h-6 text-text-light-secondary dark:text-text-dark-secondary transition-transform duration-300 ${
+              isOpen ? "rotate-180" : ""
+            }`}
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </div>
+      </div>
+
+      {/* Expandable Content */}
+      <div
+        className={`grid transition-[grid-template-rows] duration-300 ease-in-out ${
+          isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+        }`}
+      >
+        <div className="overflow-hidden">
+          <div className="pt-6 mt-6 border-t border-border-light dark:border-border-dark">
+            {/* Location (Moved from Header) */}
+            <div className="flex items-center gap-2 text-text-light-secondary dark:text-text-dark-secondary text-sm mb-6">
+              <MapPinIcon className="w-4 h-4 text-accent-light dark:text-accent-dark flex-shrink-0" />
+              <span>{exp.location}</span>
+            </div>
+
+            {/* Description */}
+            <p className="text-text-light-secondary dark:text-text-dark-secondary leading-relaxed mb-6">
+              {exp.description}
+            </p>
+
+            {/* Responsibilities */}
+            <div className="mb-6">
+              <h4 className="text-lg font-semibold text-text-light-primary dark:text-text-dark-primary mb-3">
+                Key Responsibilities:
+              </h4>
+              <ul className="space-y-2">
+                {exp.responsibilities.map((responsibility, idx) => (
+                  <li
+                    key={idx}
+                    className="flex items-start gap-3 text-text-light-secondary dark:text-text-dark-secondary"
+                  >
+                    <ChevronDoubleRightIcon className="w-4 h-4 text-accent-light dark:text-accent-dark flex-shrink-0 mt-1" />
+                    <span>{responsibility}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Technologies */}
+            <div>
+              <h4 className="text-lg font-semibold text-text-light-primary dark:text-text-dark-primary mb-3">
+                Technologies Used:
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {exp.technologies.map((tech, idx) => (
+                  <span
+                    key={idx}
+                    className="px-4 py-2 bg-bg-light dark:bg-bg-dark text-text-light-secondary dark:text-text-dark-secondary rounded-lg border border-border-light dark:border-border-dark hover:border-accent-light dark:hover:border-accent-dark hover:text-accent-light dark:hover:text-accent-dark transition-all text-sm font-medium"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 function Experience() {
   return (
@@ -25,80 +137,7 @@ function Experience() {
 
         <div className="space-y-8">
           {experiences.map((exp) => (
-            <div
-              key={exp.id}
-              className="bg-bg-light-surface dark:bg-bg-dark-surface rounded-2xl border border-border-light dark:border-border-dark hover:border-accent-light dark:hover:border-accent-dark transition-all p-8"
-            >
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
-                <div className="mb-4 md:mb-0">
-                  <h2 className="text-2xl font-bold text-text-light-primary dark:text-text-dark-primary mb-2">
-                    {exp.position}
-                  </h2>
-                  <h3 className="text-xl text-accent-light dark:text-accent-dark font-semibold mb-2">
-                    {exp.company}
-                  </h3>
-                  <div className="flex flex-wrap gap-4 text-text-light-secondary dark:text-text-dark-secondary text-sm">
-                    <div className="flex items-center gap-2">
-                      <MapPinIcon className="w-4 h-4 text-accent-light dark:text-accent-dark" />
-                      <span>{exp.location}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <ClockIcon className="w-4 h-4 text-accent-light dark:text-accent-dark" />
-                      <span>{exp.duration}</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="flex gap-3">
-                  <span
-                    className={
-                      "px-4 py-2 rounded-lg text-sm font-bold transition-all " +
-                      (exp.current
-                        ? "bg-accent-light dark:bg-accent-dark text-white dark:text-bg-dark animate-pulse-slow"
-                        : "bg-bg-light dark:bg-bg-dark text-text-light-secondary dark:text-text-dark-secondary border border-border-light dark:border-border-dark")
-                    }
-                  >
-                    {exp.current ? "Current" : exp.type}
-                  </span>
-                </div>
-              </div>
-
-              <p className="text-text-light-secondary dark:text-text-dark-secondary leading-relaxed mb-6">
-                {exp.description}
-              </p>
-
-              <div className="mb-6">
-                <h4 className="text-lg font-semibold text-text-light-primary dark:text-text-dark-primary mb-3">
-                  Key Responsibilities:
-                </h4>
-                <ul className="space-y-2">
-                  {exp.responsibilities.map((responsibility, idx) => (
-                    <li
-                      key={idx}
-                      className="flex items-start gap-3 text-text-light-secondary dark:text-text-dark-secondary"
-                    >
-                      <ChevronDoubleRightIcon className="w-4 h-4 text-accent-light dark:text-accent-dark flex-shrink-0 mt-1" />
-                      <span>{responsibility}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div>
-                <h4 className="text-lg font-semibold text-text-light-primary dark:text-text-dark-primary mb-3">
-                  Technologies Used:
-                </h4>
-                <div className="flex flex-wrap gap-2">
-                  {exp.technologies.map((tech, idx) => (
-                    <span
-                      key={idx}
-                      className="px-4 py-2 bg-bg-light dark:bg-bg-dark text-text-light-secondary dark:text-text-dark-secondary rounded-lg border border-border-light dark:border-border-dark hover:border-accent-light dark:hover:border-accent-dark hover:text-accent-light dark:hover:text-accent-dark transition-all text-sm font-medium"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
+            <ExperienceCard key={exp.id} exp={exp} />
           ))}
         </div>
       </div>

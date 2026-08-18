@@ -1,10 +1,21 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
 function EmailModal({ isOpen, onClose }) {
   const form = useRef();
   const [isSending, setIsSending] = useState(false);
   const [status, setStatus] = useState(null);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen]);
 
   const sendEmail = (e) => {
     e.preventDefault();

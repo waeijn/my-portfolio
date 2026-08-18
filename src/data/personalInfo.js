@@ -6,7 +6,7 @@ export const personalInfo = {
   subtitle: "Aspiring Software Engineer & Cybersecurity Professional",
   email: "johnwaynelandong@gmail.com",
   location: "Cabuyao, Laguna, Philippines",
-  timezone: "GMT+8 (PST)",
+  timezone: "UTC+8 (PHT)",
 
   // Hero Section Bio
   bio: "Computer Science student focused on building secure, scalable software. I enjoy turning complex ideas into practical, well-engineered solutions.",
@@ -14,25 +14,26 @@ export const personalInfo = {
   about: {
     // Introduction
     introduction:
-      "I’m a problem-solver at heart. I value clean design and thoughtful architecture, aiming to build software that is both useful and resilient.",
+      "I’m a problem-solver at heart. I value clean design and thoughtful architecture, aiming to build software that is both resilient and maintainable.",
 
     // Background
     background:
-      "Currently in my third year, I work across web and systems development. My focus has shifted toward cybersecurity and networking—I enjoy digging into how systems are built and learning how to make them more secure.",
+      "Currently in my fourth year, I work across systems development, project management, and cybersecurity. My recent work focuses on security telemetry, network defense, and building robust, attack-resilient applications.",
 
     // Values
     values:
-      "I believe software should be intentional. To me, that means writing code that is clean, secure, and easy for others to maintain.",
+      "I believe software should be intentional. To me, that means writing code that is clean, secure, and easy for teams to maintain.",
 
     // Beyond Coding
     beyondCoding:
-      "When I’m not at my desk, you’ll find me playing guitar, reading, or exploring cinema. I also follow the gaming industry and emerging tech to stay creative and keep a pulse on what's next.",
+      "When I’m not at my desk, you’ll find me exploring literature, films, or music. I also follow game design and emerging tech to stay creative and explore new problem-solving angles.",
 
     // Interests
     interests: [
       "Cybersecurity",
-      "Networking",
+      "SOC & Threat Detection",
       "Software Engineering",
+      "Computer Networks",
       "Cloud Computing",
     ],
   },

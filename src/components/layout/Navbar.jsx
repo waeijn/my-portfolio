@@ -15,9 +15,9 @@ function Navbar() {
       const sections = [
         "home",
         "about",
+        "projects",
         "technologies",
         "experience",
-        "projects",
         "certifications",
         "contact",
       ];
@@ -39,9 +39,9 @@ function Navbar() {
   const navLinks = [
     { id: "home", label: "Home" },
     { id: "about", label: "About" },
+    { id: "projects", label: "Projects" },
     { id: "technologies", label: "Tech" },
     { id: "experience", label: "Experience" },
-    { id: "projects", label: "Projects" },
     { id: "certifications", label: "Certs" },
     { id: "contact", label: "Contact" },
   ];
