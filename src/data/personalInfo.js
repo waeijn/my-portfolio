@@ -5,7 +5,7 @@ export const personalInfo = {
   title: "Computer Science Student",
   subtitle: "Aspiring Software Engineer & Cybersecurity Professional",
   email: "johnwaynelandong@gmail.com",
-  location: "Cabuyao, Laguna, Philippines",
+  location: "Laguna, Philippines",
   timezone: "UTC+8 (PHT)",
 
   // Hero Section Bio

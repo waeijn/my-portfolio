@@ -73,7 +73,7 @@ function LocationModal({ isOpen, onClose }) {
             </svg>
             <div>
               <h3 className="text-lg font-semibold text-text-light-primary dark:text-text-dark-primary mb-2">
-                Cabuyao, Laguna, Philippines
+                Laguna, Philippines
               </h3>
               <p className="text-text-light-secondary dark:text-text-dark-secondary">
                 Region: CALABARZON
@@ -88,14 +88,14 @@ function LocationModal({ isOpen, onClose }) {
         {/* Map */}
         <div className="rounded-xl overflow-hidden border border-border-light dark:border-border-dark">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123595.62963365588!2d121.0548!3d14.2783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd63e219eb56db%3A0x7e1d8b7f1e3c8f8a!2sCabuyao%2C%20Laguna%2C%20Philippines!5e0!3m2!1sen!2sph!4v1234567890"
+            src="https://maps.google.com/maps?q=Laguna%2C%20Philippines&t=&z=10&ie=UTF8&iwloc=&output=embed"
             width="100%"
             height="400"
             style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Map of Cabuyao, Laguna, Philippines"
+            title="Map of Laguna, Philippines"
             className="w-full"
           ></iframe>
         </div>
