@@ -11,6 +11,7 @@ import {
   MailIcon,
   ClockIcon,
   DownloadIcon,
+  DocumentIcon,
 } from "../../assets/icons";
 
 const socialLinks = [
@@ -110,14 +111,32 @@ function Contact() {
         </div>
 
         {/* Resume Button */}
-        <a
-          href={personalInfo.resume}
-          download
-          className="inline-flex items-center gap-2 px-10 py-4 bg-accent-light dark:bg-accent-dark text-white dark:text-bg-dark font-bold rounded-lg hover:opacity-90 transition-all shadow-lg shadow-accent-light/20 dark:shadow-accent-dark/10"
-        >
-          <DownloadIcon className="w-5 h-5" />
-          Download Resume
-        </a>
+        <div className="flex justify-center mt-8">
+          <div className="inline-flex bg-bg-light-surface dark:bg-bg-dark-surface border-2 border-border-light dark:border-border-dark rounded-xl overflow-hidden hover:-translate-y-1 hover:shadow-xl hover:border-accent-light dark:hover:border-accent-dark transition-all duration-300">
+            {/* View Button */}
+            <a
+              href={personalInfo.resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-6 py-4 text-text-light-primary dark:text-text-dark-primary font-bold hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
+              aria-label="View Resume"
+            >
+              <DocumentIcon className="w-5 h-5" />
+              Resume
+            </a>
+            {/* Divider */}
+            <div className="w-[2px] bg-border-light dark:bg-border-dark"></div>
+            {/* Download Button */}
+            <a
+              href={personalInfo.resume}
+              download
+              className="flex items-center px-6 py-4 text-text-light-primary dark:text-text-dark-primary hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors group"
+              aria-label="Download Resume"
+            >
+              <DownloadIcon className="w-5 h-5 group-hover:translate-y-0.5 transition-transform" />
+            </a>
+          </div>
+        </div>
       </div>
 
       {/* Modals */}
