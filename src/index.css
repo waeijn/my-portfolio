@@ -81,4 +81,13 @@
     @apply border-accent-light dark:border-accent-dark;
     @apply shadow-lg;
   }
+
+  /* Hide scrollbar completely */
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }

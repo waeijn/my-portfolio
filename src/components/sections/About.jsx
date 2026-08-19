@@ -1,6 +1,7 @@
 import React from "react";
 import { personalInfo } from "../../data/personalInfo";
 import { now } from "../../data/now";
+import { DigitalBookshelf } from "../common/DigitalBookshelf";
 
 function About() {
   return (
@@ -47,7 +48,7 @@ function About() {
             </div>
           </div>
 
-          {/* Right Column (Now Card) */}
+          {/* Right Column (Now Card & Digital Bookshelf) */}
           <div className="lg:col-span-5 flex flex-col gap-6">
             {/* What I'm Doing Now Card */}
             <div className="p-8 bg-bg-light-surface dark:bg-bg-dark-surface border border-border-light dark:border-border-dark rounded-xl hover:border-accent-light dark:hover:border-accent-dark transition-all shadow-sm">
@@ -88,6 +89,9 @@ function About() {
                 </li>
               </ul>
             </div>
+
+            {/* Digital Bookshelf */}
+            <DigitalBookshelf />
           </div>
         </div>
       </div>

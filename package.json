@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sync-books": "node scripts/sync-goodreads.js"
   },
   "dependencies": {
     "@carbon/icons-react": "^11.86.0",

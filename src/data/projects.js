@@ -48,7 +48,7 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Core Threads",
+    title: "CORE THREADS",
     role: "Project Manager & Game Designer",
     description:
       "A 1-bit retro MS-DOS terminal-style roguelite deckbuilder featuring tactical card combat and authentic low-res terminal aesthetics.",
