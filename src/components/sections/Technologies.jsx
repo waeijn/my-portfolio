@@ -39,33 +39,31 @@ function Technologies() {
           <div className="w-24 h-1 bg-accent-light dark:bg-accent-dark mx-auto mt-6 rounded-full"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto">
           {technologies.categories.map((category, categoryIndex) => {
             const IconComponent = iconMap[category.name] || CodeIcon;
 
             return (
               <div
                 key={categoryIndex}
-                className="bg-bg-light-surface dark:bg-bg-dark-surface p-8 rounded-2xl border border-border-light dark:border-border-dark hover:border-accent-light dark:hover:border-accent-dark transition-all flex flex-col group/card"
+                className="p-5 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-neutral-900/50 backdrop-blur-sm hover:border-accent-light dark:hover:border-accent-dark hover:shadow-lg transition-all duration-300 flex flex-col justify-start group/card hover:-translate-y-1"
               >
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="text-accent-light dark:text-accent-dark">
-                    <IconComponent className="w-8 h-8 transition-colors" />
+                  <div className="w-12 h-12 shrink-0 rounded-xl bg-accent-light/10 dark:bg-accent-dark/10 flex items-center justify-center text-accent-light dark:text-accent-dark group-hover/card:bg-accent-light group-hover/card:text-white dark:group-hover/card:bg-accent-dark dark:group-hover/card:text-bg-dark transition-colors duration-300">
+                    <IconComponent className="w-6 h-6" />
                   </div>
-                  <h3 className="text-2xl font-bold text-text-light-primary dark:text-text-dark-primary">
+                  <h3 className="text-xl font-bold text-text-light-primary dark:text-text-dark-primary leading-tight">
                     {category.name}
                   </h3>
                 </div>
 
-                <div className="flex flex-wrap gap-3">
+                <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill, skillIndex) => (
                     <div
                       key={skillIndex}
-                      className="py-2 px-4 rounded-lg bg-bg-light dark:bg-bg-dark border border-border-light dark:border-border-dark hover:text-accent-light dark:hover:text-accent-dark hover:border-accent-light dark:hover:border-accent-dark transition-all cursor-default group"
+                      className="px-3 py-1.5 text-sm font-medium rounded-lg border border-border-light dark:border-border-dark bg-bg-light dark:bg-bg-dark text-text-light-secondary dark:text-text-dark-secondary hover:border-accent-light dark:hover:border-accent-dark hover:text-accent-light dark:hover:text-accent-dark transition-colors cursor-default"
                     >
-                      <span className="text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary group-hover:text-accent-light dark:group-hover:text-accent-dark transition-colors">
-                        {skill.name}
-                      </span>
+                      {skill.name}
                     </div>
                   ))}
                 </div>
