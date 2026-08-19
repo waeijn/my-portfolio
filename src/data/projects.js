@@ -2,6 +2,7 @@ export const projects = [
   {
     id: 1,
     title: "Adaptive API Rate Limiter",
+    role: "Project Manager & Lead Researcher",
     description:
       "An intelligent intrusion detection and prevention system implementing adaptive rate limiting through heuristic pattern classification and token bucket optimization algorithms.",
     longDescription:
@@ -21,6 +22,7 @@ export const projects = [
   {
     id: 2,
     title: "SOC Home Lab",
+    role: "Security Analyst & Lab Architect",
     description:
       "A multi-VM Security Operations Center lab simulating real-world attack detection using Splunk SIEM, built across an isolated virtualized network.",
     longDescription:
@@ -46,7 +48,28 @@ export const projects = [
   },
   {
     id: 3,
+    title: "Core Threads",
+    role: "Project Manager & Game Designer",
+    description:
+      "A 1-bit retro MS-DOS terminal-style roguelite deckbuilder featuring tactical card combat and authentic low-res terminal aesthetics.",
+    longDescription:
+      "Game development project serving as Project Manager and Game Designer. Led cross-functional collaboration, sprint planning, and core architecture while designing tactical card mechanics, balancing gameplay loops, and crafting authentic 1-bit visual assets and terminal UI/UX.",
+    technologies: ["Unity 6", "C#", "Aseprite", "Git", "Project Management"],
+    features: [
+      "Tactical Card Combat & Deckbuilding",
+      "1-Bit Retro MS-DOS Terminal UI/UX",
+      "Original Pixel Art & Animated Sprites",
+      "Procedural Run & Encounter Progression",
+      "Sprint Planning & Milestone Architecture",
+    ],
+    github: "https://github.com/waeijn/core-threads",
+    status: "In Progress",
+    date: "August 2026 – Present",
+  },
+  {
+    id: 4,
     title: "Secure Enterprise Network Lab",
+    role: "Network Security Engineer",
     description:
       "A comprehensive month-long cybersecurity project focused on designing, implementing, and hardening a simulated enterprise network infrastructure using Cisco Packet Tracer.",
     longDescription:
@@ -64,8 +87,9 @@ export const projects = [
     date: "March 2026",
   },
   {
-    id: 4,
+    id: 5,
     title: "AuraTech",
+    role: "Team Lead & Frontend Developer",
     description:
       "An e-commerce platform specializing in premium tech gadgets, featuring a modern UI/UX and a seamless shopping experience.",
     longDescription:
@@ -82,26 +106,9 @@ export const projects = [
     date: "December 2025",
   },
   {
-    id: 5,
-    title: "Forecast",
-    description:
-      "An AI-powered inventory management dashboard that uses TensorFlow.js to predict stock reorder needs based on sales velocity and lead times.",
-    longDescription:
-      "A sophisticated data visualization tool that integrates machine learning directly in the browser. It analyzes current stock levels, average weekly sales, and supplier lead times to calculate 'Days of Stock' and provide real-time reorder urgency and confidence scores.",
-    technologies: ["React", "TensorFlow.js", "Bootstrap", "Laravel"],
-    features: [
-      "On-device Model Training",
-      "Predictive Inventory Analytics",
-      "Real-time Data Filtering",
-      "Urgency & Confidence Scoring",
-    ],
-    github: "https://github.com/waeijn/forecast",
-    status: "Completed",
-    date: "November 2025",
-  },
-  {
     id: 6,
     title: "PageTurn",
+    role: "Team Lead & Full-Stack Developer",
     description:
       "A robust Java-based Point of Sale system designed for bookstores to manage inventory, process sales transactions, and generate digital receipts.",
     longDescription:
@@ -120,6 +127,7 @@ export const projects = [
   {
     id: 7,
     title: "FoodFiesta",
+    role: "Frontend Developer",
     description:
       "A comprehensive e-commerce platform focused on food delivery and management, featuring user authentication and a streamlined ordering process.",
     longDescription:

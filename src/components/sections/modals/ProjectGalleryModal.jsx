@@ -42,10 +42,17 @@ function ProjectGalleryModal({ isOpen, onClose }) {
                 className="bg-bg-light-surface dark:bg-bg-dark-surface p-6 rounded-xl border border-border-light dark:border-border-dark hover:border-accent-light dark:hover:border-accent-dark transition-all flex flex-col group"
               >
                 <div className="flex items-start justify-between mb-4">
-                  <h3 className="text-xl font-bold text-text-light-primary dark:text-text-dark-primary group-hover:text-accent-light dark:group-hover:text-accent-dark transition-colors">
-                    {project.title}
-                  </h3>
-                  <div className="flex flex-col items-end">
+                  <div>
+                    <h3 className="text-xl font-bold text-text-light-primary dark:text-text-dark-primary group-hover:text-accent-light dark:group-hover:text-accent-dark transition-colors">
+                      {project.title}
+                    </h3>
+                    {project.role && (
+                      <p className="text-sm font-medium text-accent-light dark:text-accent-dark mt-1">
+                        {project.role}
+                      </p>
+                    )}
+                  </div>
+                  <div className="flex flex-col items-end shrink-0 ml-4">
                     <span className="text-xs text-text-light-muted dark:text-text-dark-muted mb-2 whitespace-nowrap ml-4">
                       {project.date}
                     </span>
