@@ -2,7 +2,6 @@ import React, { useState, useRef, useCallback, useEffect } from "react";
 import { FiBookOpen, FiExternalLink, FiStar } from "react-icons/fi";
 import { BOOKS, GOODREADS_PROFILE_URL } from "../../data/books";
 
-const AUTO_SCROLL_SPEED = 0.5;
 const PAUSE_AFTER_INTERACT = 2000;
 
 export const DigitalBookshelf = () => {
@@ -17,17 +16,37 @@ export const DigitalBookshelf = () => {
   const loopedBooks = [...BOOKS, ...BOOKS, ...BOOKS];
 
   // Auto-scroll animation loop
-  const autoScroll = useCallback(() => {
+  const exactScrollXRef = useRef(null);
+  const lastTimeRef = useRef(null);
+  const SCROLL_SPEED_PX_PER_MS = 0.03; // ~1.8px per frame at 60fps
+  
+  const autoScroll = useCallback((timestamp) => {
     const el = carouselRef.current;
+    
+    if (!lastTimeRef.current) lastTimeRef.current = timestamp;
+    const deltaTime = timestamp - lastTimeRef.current;
+    lastTimeRef.current = timestamp;
+
     if (el && !isPausedRef.current) {
-      el.scrollLeft += AUTO_SCROLL_SPEED;
+      if (exactScrollXRef.current === null) {
+        exactScrollXRef.current = el.scrollLeft;
+      }
+
+      // Move independently of frame rate
+      exactScrollXRef.current += SCROLL_SPEED_PX_PER_MS * deltaTime;
+      el.scrollLeft = exactScrollXRef.current;
 
       // Seamless loop snap-back (invisible — scrollbar is hidden)
       const sectionWidth = el.scrollWidth / 3;
-      if (el.scrollLeft >= sectionWidth * 2) {
-        el.scrollLeft -= sectionWidth;
+      if (exactScrollXRef.current >= sectionWidth * 2) {
+        exactScrollXRef.current -= sectionWidth;
+        el.scrollLeft = exactScrollXRef.current;
       }
+    } else if (el) {
+      // Sync ref with user's manual scroll position while paused
+      exactScrollXRef.current = el.scrollLeft;
     }
+    
     animationRef.current = requestAnimationFrame(autoScroll);
   }, []);
 
@@ -122,7 +141,9 @@ export const DigitalBookshelf = () => {
                   setActiveBook(book);
                   pauseAutoScroll();
                 }}
-                className={`relative shrink-0 transition-all duration-300 cursor-pointer ${
+                aria-label={`View details for ${book.title}`}
+                title={book.title}
+                className={`relative shrink-0 transition-all duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-accent-light dark:focus:ring-accent-dark focus:ring-offset-2 dark:focus:ring-offset-neutral-900 ${
                   isSelected
                     ? "ring-2 ring-accent-light dark:ring-accent-dark ring-offset-2 dark:ring-offset-neutral-900 -translate-y-2 shadow-lg scale-105 rounded-r-md rounded-l-sm"
                     : "opacity-75 hover:opacity-100 hover:-translate-y-1 rounded-r-md rounded-l-sm"

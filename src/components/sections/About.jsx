@@ -5,11 +5,14 @@ import { DigitalBookshelf } from "../common/DigitalBookshelf";
 
 function About() {
   return (
-    <section id="about" className="px-6 py-20 bg-bg-light dark:bg-bg-dark">
+    <section id="about" className="px-6 py-20 bg-bg-light dark:bg-bg-dark scroll-mt-24">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-text-light-primary dark:text-text-dark-primary mb-12">
-          About Me
-        </h2>
+        <div className="mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-text-light-primary dark:text-text-dark-primary tracking-tight mb-4">
+            About Me
+          </h2>
+          <div className="w-16 h-1 bg-accent-light dark:bg-accent-dark rounded-full opacity-70"></div>
+        </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           {/* Left Column (Bio, Interests & Beyond Coding) */}

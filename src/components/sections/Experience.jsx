@@ -120,19 +120,16 @@ function ExperienceCard({ exp }) {
 
 function Experience() {
   return (
-    <section id="experience" className="px-6 py-20 bg-bg-light dark:bg-bg-dark">
+    <section id="experience" className="px-6 py-20 bg-bg-light dark:bg-bg-dark scroll-mt-24">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
             My{" "}
             <span className="text-accent-light dark:text-accent-dark">
               Experience
             </span>
-          </h1>
-          <p className="text-text-light-secondary dark:text-text-dark-secondary text-lg max-w-2xl mx-auto">
-            Professional experience and roles where I've applied my skills.
-          </p>
-          <div className="w-24 h-1 bg-accent-light dark:bg-accent-dark mx-auto mt-6 rounded-full"></div>
+          </h2>
+          <div className="w-16 h-1 bg-accent-light dark:bg-accent-dark mx-auto mt-4 rounded-full opacity-70"></div>
         </div>
 
         <div className="space-y-8">

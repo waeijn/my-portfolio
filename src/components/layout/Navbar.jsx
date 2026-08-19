@@ -132,6 +132,7 @@ function Navbar() {
             <button
               className="lg:hidden p-2 text-text-light-primary dark:text-text-dark-primary"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle mobile menu"
             >
               {isMenuOpen ? (
                 <XIcon className="w-6 h-6" />

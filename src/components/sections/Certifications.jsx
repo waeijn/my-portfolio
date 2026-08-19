@@ -36,20 +36,17 @@ function Certifications() {
   return (
     <section
       id="certifications"
-      className="px-6 py-20 bg-bg-light dark:bg-bg-dark"
+      className="px-6 py-20 bg-bg-light dark:bg-bg-dark scroll-mt-24"
     >
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
             My{" "}
             <span className="text-accent-light dark:text-accent-dark">
               Certifications
             </span>
-          </h1>
-          <p className="text-text-light-secondary dark:text-text-dark-secondary text-lg max-w-2xl mx-auto">
-            Formal training and credentials that validate my skill set.
-          </p>
-          <div className="w-24 h-1 bg-accent-light dark:bg-accent-dark mx-auto mt-6 rounded-full"></div>
+          </h2>
+          <div className="w-16 h-1 bg-accent-light dark:bg-accent-dark mx-auto mt-4 rounded-full opacity-70"></div>
         </div>
 
         {/* Featured Grid */}

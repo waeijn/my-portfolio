@@ -61,14 +61,14 @@ function Hero() {
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 px-4 w-full sm:w-auto mb-10">
           <button
             onClick={() => scrollToSection("projects")}
-            className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent-light dark:bg-accent-dark text-white dark:text-bg-dark font-bold rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-accent-light/20 dark:hover:shadow-accent-dark/20 active:scale-[0.98]"
+            className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent-light dark:bg-accent-dark text-white dark:text-bg-dark font-bold rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-accent-light/20 dark:hover:shadow-accent-dark/20 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-accent-light dark:focus:ring-accent-dark focus:ring-offset-2 dark:focus:ring-offset-bg-dark"
           >
             <span>View Projects</span>
             <span className="transform transition-transform duration-300 group-hover:translate-x-1">→</span>
           </button>
           <button
             onClick={() => scrollToSection("contact")}
-            className="w-full sm:w-auto px-8 py-4 border-2 border-border-light dark:border-border-dark text-text-light-primary dark:text-text-dark-primary font-bold rounded-xl hover:border-accent-light dark:hover:border-accent-dark hover:text-accent-light dark:hover:text-accent-dark transition-all duration-300 hover:-translate-y-1 hover:shadow-lg active:scale-[0.98]"
+            className="w-full sm:w-auto px-8 py-4 border-2 border-border-light dark:border-border-dark text-text-light-primary dark:text-text-dark-primary font-bold rounded-xl hover:border-accent-light dark:hover:border-accent-dark hover:text-accent-light dark:hover:text-accent-dark transition-all duration-300 hover:-translate-y-1 hover:shadow-lg active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-accent-light dark:focus:ring-accent-dark focus:ring-offset-2 dark:focus:ring-offset-bg-dark"
           >
             Get In Touch
           </button>

@@ -22,21 +22,17 @@ function Technologies() {
   return (
     <section
       id="technologies"
-      className="px-6 py-20 bg-bg-light dark:bg-bg-dark"
+      className="px-6 py-20 bg-bg-light dark:bg-bg-dark scroll-mt-24"
     >
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
             Technologies &{" "}
             <span className="text-accent-light dark:text-accent-dark">
               Skills
             </span>
-          </h1>
-          <p className="text-text-light-secondary dark:text-text-dark-secondary text-lg max-w-2xl mx-auto">
-            Technologies and tools I am practicing and working with to bring
-            ideas to life.
-          </p>
-          <div className="w-24 h-1 bg-accent-light dark:bg-accent-dark mx-auto mt-6 rounded-full"></div>
+          </h2>
+          <div className="w-16 h-1 bg-accent-light dark:bg-accent-dark mx-auto mt-4 rounded-full opacity-70"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto">

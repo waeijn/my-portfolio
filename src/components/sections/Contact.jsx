@@ -57,17 +57,15 @@ function Contact() {
   };
 
   return (
-    <section id="contact" className="px-6 py-20 bg-bg-light dark:bg-bg-dark">
+    <section id="contact" className="px-6 py-20 bg-bg-light dark:bg-bg-dark scroll-mt-24">
       <div className="max-w-4xl mx-auto text-center">
-        <h1 className="text-5xl md:text-6xl font-bold mb-4">
-          Get In{" "}
-          <span className="text-accent-light dark:text-accent-dark">Touch</span>
-        </h1>
-        <p className="text-xl text-text-light-secondary dark:text-text-dark-secondary max-w-2xl mx-auto mb-12">
-          I am currently open to new opportunities and experiences.
-          <br />
-          Feel free to connect or drop a message!
-        </p>
+        <div className="mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
+            Get In{" "}
+            <span className="text-accent-light dark:text-accent-dark">Touch</span>
+          </h2>
+          <div className="w-16 h-1 bg-accent-light dark:bg-accent-dark mx-auto mt-4 rounded-full opacity-70"></div>
+        </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {contactItems.map((item, index) => (
@@ -112,25 +110,25 @@ function Contact() {
 
         {/* Resume Button */}
         <div className="flex justify-center mt-8">
-          <div className="inline-flex bg-bg-light-surface dark:bg-bg-dark-surface border-2 border-border-light dark:border-border-dark rounded-xl overflow-hidden hover:-translate-y-1 hover:shadow-xl hover:border-accent-light dark:hover:border-accent-dark transition-all duration-300">
+          <div className="inline-flex bg-bg-light-surface dark:bg-bg-dark-surface border-2 border-border-light dark:border-border-dark rounded-xl overflow-hidden hover:-translate-y-1 hover:shadow-xl hover:border-black dark:hover:border-white transition-all duration-300">
             {/* View Button */}
             <a
               href={personalInfo.resume}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-6 py-4 text-text-light-primary dark:text-text-dark-primary font-bold hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
+              className="flex items-center gap-2 px-6 py-4 text-text-light-primary dark:text-text-dark-primary font-bold hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black focus:outline-none focus:ring-2 focus:ring-accent-light dark:focus:ring-accent-dark transition-colors"
               aria-label="View Resume"
             >
               <DocumentIcon className="w-5 h-5" />
               Resume
             </a>
             {/* Divider */}
-            <div className="w-[2px] bg-border-light dark:bg-border-dark"></div>
+            <div className="w-[2px] bg-border-light dark:bg-border-dark transition-colors"></div>
             {/* Download Button */}
             <a
               href={personalInfo.resume}
               download
-              className="flex items-center px-6 py-4 text-text-light-primary dark:text-text-dark-primary hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors group"
+              className="flex items-center px-6 py-4 text-text-light-primary dark:text-text-dark-primary hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black focus:outline-none focus:ring-2 focus:ring-accent-light dark:focus:ring-accent-dark transition-colors group"
               aria-label="Download Resume"
             >
               <DownloadIcon className="w-5 h-5 group-hover:translate-y-0.5 transition-transform" />
