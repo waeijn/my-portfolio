@@ -16,3 +16,6 @@ export * from "./DownloadIcon";
 export * from "./XIcon";
 export * from "./MenuIcon";
 export * from "./TrendingUpIcon";
+export { IbmSecurity as IbmIcon } from "@carbon/icons-react";
+export { SiGoogle as GoogleIcon, SiCisco as CiscoIcon, SiFreecodecamp as FreecodecampIcon } from "react-icons/si";
+export { FiAward as AwardIcon } from "react-icons/fi";

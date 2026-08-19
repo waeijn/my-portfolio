@@ -1,6 +1,31 @@
 import React, { useEffect } from "react";
 import { certifications } from "../../../data/certifications";
-import { ExternalLinkIcon, XIcon } from "../../../assets/icons";
+import { ExternalLinkIcon, XIcon, IbmIcon, GoogleIcon, CiscoIcon, FreecodecampIcon, AwardIcon } from "../../../assets/icons";
+
+const getIssuerIcon = (iconKey) => {
+  switch (iconKey) {
+    case "google":
+      return (
+        <GoogleIcon className="w-6 h-6 text-accent-light dark:text-accent-dark" />
+      );
+    case "cisco":
+      return (
+        <CiscoIcon className="w-6 h-6 text-accent-light dark:text-accent-dark" />
+      );
+    case "freecodecamp":
+      return (
+        <FreecodecampIcon className="w-6 h-6 text-accent-light dark:text-accent-dark" />
+      );
+    case "ibm":
+      return (
+        <IbmIcon size={24} className="text-accent-light dark:text-accent-dark" />
+      );
+    default:
+      return (
+        <AwardIcon className="w-6 h-6 text-accent-light dark:text-accent-dark" />
+      );
+  }
+};
 
 function CertificationGalleryModal({ isOpen, onClose }) {
   useEffect(() => {
@@ -45,19 +70,27 @@ function CertificationGalleryModal({ isOpen, onClose }) {
                 className="p-6 rounded-xl border border-border-light dark:border-border-dark bg-bg-light dark:bg-bg-dark hover:border-accent-light dark:hover:border-accent-dark transition-all flex flex-col group"
               >
                 {/* Header */}
-                <div className="flex items-start justify-between mb-3">
-                  <h3 className="font-bold text-lg text-text-light-primary dark:text-text-dark-primary group-hover:text-accent-light dark:group-hover:text-accent-dark transition-colors">
-                    {cert.title}
-                  </h3>
-                  <span className="text-xs text-text-light-muted dark:text-text-dark-muted whitespace-nowrap ml-4">
-                    {cert.date}
-                  </span>
+                <div className="flex gap-4 items-start mb-4">
+                  {/* Issuer Badge */}
+                  <div className="w-12 h-12 shrink-0 rounded-xl bg-bg-light-surface dark:bg-bg-dark-surface border border-border-light dark:border-border-dark flex items-center justify-center">
+                    {getIssuerIcon(cert.icon)}
+                  </div>
+                  
+                  {/* Title & Info */}
+                  <div className="flex-1">
+                    <div className="flex items-start justify-between gap-4">
+                      <h3 className="font-bold text-lg text-text-light-primary dark:text-text-dark-primary group-hover:text-accent-light dark:group-hover:text-accent-dark transition-colors leading-snug">
+                        {cert.title}
+                      </h3>
+                      <span className="text-xs text-text-light-muted dark:text-text-dark-muted whitespace-nowrap pt-1">
+                        {cert.date}
+                      </span>
+                    </div>
+                    <p className="text-accent-light dark:text-accent-dark text-sm font-semibold mt-1">
+                      {cert.issuer}
+                    </p>
+                  </div>
                 </div>
-
-                {/* Issuer */}
-                <p className="text-accent-light dark:text-accent-dark text-sm font-semibold mb-3">
-                  {cert.issuer}
-                </p>
 
                 {/* Description */}
                 <p className="text-text-light-secondary dark:text-text-dark-secondary text-sm leading-relaxed mb-4">

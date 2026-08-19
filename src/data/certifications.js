@@ -3,6 +3,7 @@ export const certifications = [
     id: 1,
     title: "Google Cybersecurity Professional Certificate",
     issuer: "Google",
+    icon: "google",
     date: "July 2026",
     description:
       "A nine-course professional certificate covering foundations of cybersecurity, risk management, network security, Linux and SQL, threat detection, and incident response using industry-standard tools.",
@@ -23,6 +24,7 @@ export const certifications = [
     id: 2,
     title: "IT Fundamentals for Cybersecurity Specialization",
     issuer: "IBM",
+    icon: "ibm",
     date: "January 2026",
     description:
       "A four-course specialization covering cyberattack types and defense tools, OS administration and security for Windows and Linux, network protocols and architecture security, and compliance frameworks including GDPR and HIPAA.",
@@ -43,6 +45,7 @@ export const certifications = [
     id: 3,
     title: "Lean Six Sigma Yellow Belt",
     issuer: "MF Treinamentos",
+    icon: "default",
     date: "January 2026",
     description:
       "Introductory level for project team members, covering process mapping and the DMAIC framework.",
@@ -53,6 +56,7 @@ export const certifications = [
     id: 4,
     title: "Lean Six Sigma White Belt",
     issuer: "MF Treinamentos",
+    icon: "default",
     date: "January 2026",
     description:
       "Foundational certification focused on the basics of Lean Six Sigma methodology, process thinking, and continuous improvement mindsets.",
@@ -63,6 +67,7 @@ export const certifications = [
     id: 5,
     title: "Networking Basics",
     issuer: "Cisco Networking Academy",
+    icon: "cisco",
     date: "January 2026",
     description:
       "Comprehensive study of network architectures, IP addressing, and the fundamentals of Ethernet and wireless communications.",
@@ -73,6 +78,7 @@ export const certifications = [
     id: 6,
     title: "Introduction to Cybersecurity",
     issuer: "Cisco Networking Academy",
+    icon: "cisco",
     date: "December 2025",
     description:
       "Achieved student-level credential for explaining common cyber threats, attacks, vulnerabilities, and protection methods.",
@@ -83,6 +89,7 @@ export const certifications = [
     id: 7,
     title: "Legacy Responsive Web Design V8",
     issuer: "freeCodeCamp",
+    icon: "freecodecamp",
     date: "December 2024",
     description:
       "A comprehensive certification (approx. 300 hours) covering modern responsive web design principles, HTML5, and CSS3.",
