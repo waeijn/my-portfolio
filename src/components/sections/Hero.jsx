@@ -4,7 +4,7 @@ import {
   ArrowDownIcon,
   GithubIcon,
   LinkedInIcon,
-  MailIcon,
+  InstagramIcon,
 } from "../../assets/icons";
 import profileImg from "../../assets/images/1x1-no_bg.png";
 
@@ -75,32 +75,23 @@ function Hero() {
         </div>
 
         {/* Social Links */}
-        <div className="flex items-center gap-6">
-          <a
-            href={personalInfo.social.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-text-light-muted dark:text-text-dark-muted hover:text-text-light-primary dark:hover:text-text-dark-primary transition-colors"
-            aria-label="GitHub"
-          >
-            <GithubIcon className="w-6 h-6" />
-          </a>
-          <a
-            href={personalInfo.social.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-text-light-muted dark:text-text-dark-muted hover:text-[#0A66C2] dark:hover:text-[#0A66C2] transition-colors"
-            aria-label="LinkedIn"
-          >
-            <LinkedInIcon className="w-6 h-6" />
-          </a>
-          <a
-            href={`mailto:${personalInfo.email}`}
-            className="text-text-light-muted dark:text-text-dark-muted hover:text-accent-light dark:hover:text-accent-dark transition-colors"
-            aria-label="Email"
-          >
-            <MailIcon className="w-6 h-6" />
-          </a>
+        <div className="flex items-center justify-center gap-6">
+          {[
+            { name: "Instagram", url: personalInfo.social.instagram, Icon: InstagramIcon },
+            { name: "LinkedIn", url: personalInfo.social.linkedin, Icon: LinkedInIcon },
+            { name: "GitHub", url: personalInfo.social.github, Icon: GithubIcon },
+          ].map((link, index) => (
+            <a
+              key={index}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-4 rounded-full bg-bg-light-surface dark:bg-bg-dark-surface border border-border-light dark:border-border-dark hover:bg-accent-light dark:hover:bg-accent-dark transition-all group hover:-translate-y-1 hover:shadow-lg active:scale-[0.98]"
+              aria-label={link.name}
+            >
+              <link.Icon className="w-6 h-6 text-text-light-primary dark:text-text-dark-primary group-hover:text-white dark:group-hover:text-bg-dark transition-colors" />
+            </a>
+          ))}
         </div>
       </div>
 

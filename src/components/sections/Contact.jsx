@@ -100,7 +100,7 @@ function Contact() {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-4 rounded-full bg-bg-light-surface dark:bg-bg-dark-surface border border-border-light dark:border-border-dark hover:bg-accent-light dark:hover:bg-accent-dark transition-all group"
+                className="p-4 rounded-full bg-bg-light-surface dark:bg-bg-dark-surface border border-border-light dark:border-border-dark hover:bg-accent-light dark:hover:bg-accent-dark transition-all group hover:-translate-y-1 hover:shadow-lg active:scale-[0.98]"
                 aria-label={link.name}
               >
                 <link.Icon className="w-6 h-6 text-text-light-primary dark:text-text-dark-primary group-hover:text-white dark:group-hover:text-bg-dark transition-colors" />
