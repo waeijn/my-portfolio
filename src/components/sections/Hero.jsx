@@ -1,6 +1,7 @@
 import React from "react";
 import { personalInfo } from "../../data/personalInfo";
 import { ArrowDownIcon } from "../../assets/icons";
+import profileImg from "../../assets/images/1x1-no_bg.png";
 
 function Hero() {
   const scrollToSection = (id) => {
@@ -16,7 +17,7 @@ function Hero() {
         {/* Profile Photo - Scaled down for mobile */}
         <div className="w-32 h-32 md:w-48 md:h-48 mx-auto mb-8 rounded-full bg-bg-light-surface dark:bg-bg-dark-surface border-2 border-border-light dark:border-border-dark overflow-hidden flex items-center justify-center shadow-xl animate-fade-in">
           <img
-            src="/img/1x1-no_bg.png"
+            src={profileImg}
             alt={personalInfo.name}
             className="w-full h-full object-cover"
             onError={(e) => {
