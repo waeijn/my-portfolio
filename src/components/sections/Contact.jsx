@@ -72,10 +72,12 @@ function Contact() {
           {contactItems.map((item, index) => (
             <div
               key={index}
-              className="bg-bg-light-surface dark:bg-bg-dark-surface p-6 rounded-2xl border border-border-light dark:border-border-dark hover:border-accent-light dark:hover:border-accent-dark transition-all flex flex-col items-center text-center cursor-pointer group"
+              className="relative bg-bg-light-surface dark:bg-bg-dark-surface p-6 rounded-2xl border border-border-light dark:border-border-dark flex flex-col items-center text-center cursor-pointer select-none group transition-all duration-200 hover:-translate-y-1 hover:shadow-md hover:border-accent-light/50 active:scale-[0.99]"
               onClick={() => handleCardClick(item.type)}
             >
-              <item.Icon className="w-6 h-6 text-accent-light dark:text-accent-dark flex-shrink-0 group-hover:scale-110 transition-transform" />
+              <div className="w-9 h-9 flex items-center justify-center rounded-lg bg-neutral-100 dark:bg-neutral-800 group-hover:bg-accent-light/10 text-text-light-secondary dark:text-text-dark-secondary group-hover:text-accent-light dark:group-hover:text-accent-dark transition-colors">
+                <item.Icon className="w-5 h-5 flex-shrink-0 group-hover:scale-110 transition-transform" />
+              </div>
               <h3 className="text-lg font-semibold text-text-light-primary dark:text-text-dark-primary mt-4 mb-2">
                 {item.label}
               </h3>
