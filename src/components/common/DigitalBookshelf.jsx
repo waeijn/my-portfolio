@@ -110,7 +110,7 @@ export const DigitalBookshelf = () => {
             isAutoScrollingRef.current = true;
             if (pauseTimerRef.current) clearTimeout(pauseTimerRef.current);
           }}
-          className="flex items-center gap-2.5 pb-2 overflow-x-auto hide-scrollbar"
+          className="flex items-center gap-2.5 py-4 px-2 -mx-2 overflow-x-auto hide-scrollbar"
           style={{ scrollBehavior: "auto" }}
         >
           {loopedBooks.map((book, index) => {
