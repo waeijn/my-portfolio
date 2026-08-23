@@ -67,6 +67,27 @@ export const projects = [
     date: "August 2026 – Present",
   },
   {
+    id: 8,
+    title: "Developer Portfolio v2.0",
+    role: "Frontend Developer",
+    description:
+      "A modern, high-performance developer portfolio featuring a custom Goodreads API integration, seamless dark mode, and accessible component design.",
+    longDescription:
+      "Built from scratch using React and Vite, this portfolio serves as a highly optimized showcase of technical and frontend design skills. It features a completely custom Node.js script that parses XML RSS feeds from Goodreads to sync book data locally, bypassing third-party API rate limits. The UI includes frame-rate independent smooth scrolling animations using requestAnimationFrame, native dark/light mode toggle with anti-flash script injection, and robust accessibility standards (ARIA, focus rings, keyboard navigation).",
+    technologies: ["React", "Vite", "Tailwind CSS", "Node.js", "JavaScript"],
+    features: [
+      "Custom Goodreads RSS XML Parser",
+      "Delta-Time Smooth Scrolling Carousel",
+      "Native Dark Mode & Anti-Flash Injection",
+      "Optimized Asset & Chunk Bundling",
+      "WAI-ARIA Accessibility Standards",
+    ],
+    github: "https://github.com/Waeijn/my-portfolio",
+    live: "https://waeijn.github.io/my-portfolio/",
+    status: "Completed",
+    date: "August 2026",
+  },
+  {
     id: 4,
     title: "Secure Enterprise Network Lab",
     role: "Network Security Engineer",
