@@ -21,6 +21,15 @@ function Navbar() {
         "certifications",
         "contact",
       ];
+      // Check if scrolled to the absolute bottom
+      if (
+        window.innerHeight + Math.round(window.scrollY) >=
+        document.documentElement.scrollHeight - 20
+      ) {
+        setActiveSection("contact");
+        return;
+      }
+
       const current = sections.find((section) => {
         const element = document.getElementById(section);
         if (element) {

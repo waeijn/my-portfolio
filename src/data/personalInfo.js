@@ -26,7 +26,7 @@ export const personalInfo = {
 
     // Beyond Coding
     beyondCoding:
-      "When I’m not at my desk, you’ll find me exploring literature, films, or music. I also follow game design and emerging tech to stay creative and explore new problem-solving angles.",
+      "When I’m not at my desk, you’ll find me exploring literature, films, or music. I also follow game industry and emerging tech to stay creative and explore new problem-solving angles.",
 
     // Interests
     interests: [
