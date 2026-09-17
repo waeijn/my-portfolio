@@ -127,6 +127,46 @@ export const projects = [
     date: "December 2025",
   },
   {
+    id: 9,
+    title: "Wilma",
+    role: "Full Stack Developer",
+    description:
+      "An AI-powered web application using a TensorFlow.js Deep Neural Network and Laravel to predict sari-sari store inventory needs and prevent stockouts.",
+    longDescription:
+      "A full-stack application designed to help sari-sari store owners manage inventory and make data-driven purchasing decisions. Instead of static formulas, Wilma utilizes a TensorFlow.js time-series regression model trained on historical sales data to predict exact stock levels and categorize restock urgency. Built with a React frontend featuring Recharts for dynamic visualizations, and a Laravel backend, all fully containerized using Docker.",
+    technologies: ["React", "TensorFlow.js", "Laravel", "MySQL", "Docker"],
+    features: [
+      "Machine Learning Stock Predictions",
+      "Intelligent Restock Urgency Categorization",
+      "Dynamic Sales Trend Visualizations",
+      "CSV Bulk Data Migration",
+      "Fully Containerized Architecture",
+    ],
+    github: "https://github.com/waeijn/wilma",
+    status: "Completed",
+    date: "December 2025",
+  },
+    {
+    id: 10,
+    title: "Task Management System",
+    role: "Team Lead & Full Stack Developer",
+    description:
+      "A minimalist, high-performance task management dashboard designed with a focus on clean UI/UX, fast interactions, and zero clutter.",
+    longDescription:
+      "Led a cross-functional team of 5 members in building a React frontend and a RESTful Laravel 11 backend, this project features a Figma-inspired minimalist UI with a deep matte slate dark mode. It includes advanced real-time task filtering, flexible grid and list views, and comprehensive category and priority organization. The entire application is fully containerized using Docker for seamless local development and deployment.",
+    technologies: ["React", "Laravel 11", "PHP", "SQLite", "Docker"],
+    features: [
+      "Minimalist Figma-Inspired Dashboard UI",
+      "Advanced Filtering & Search Mechanisms",
+      "Flexible Grid and List View Toggles",
+      "Pure-CSS Deep Matte Dark Theme",
+      "RESTful Backend with Summary Metrics",
+    ],
+    github: "https://github.com/waeijn/task-management-system",
+    status: "Completed",
+    date: "October 2025",
+  },
+{
     id: 6,
     title: "PageTurn",
     role: "Team Lead & Full-Stack Developer",
