@@ -5,5 +5,5 @@ export const now = {
   learning:
     "Security telemetry, network defense forwarders, and game development in Unity 6.",
   exploring:
-    "1-bit retro MS-DOS terminal styling and solo Raider/Executor builds in Elden Ring: Nightreign.",
+    "1-bit retro MS-DOS terminal styling and the Elden Ring DLC: Shadow of the Erdtree.",
 };
