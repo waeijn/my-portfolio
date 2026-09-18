@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, lazy, Suspense } from "react";
 import { personalInfo } from "../../data/personalInfo";
 import {
   ArrowDownIcon,
@@ -8,7 +8,21 @@ import {
 } from "../../assets/icons";
 import profileImg from "../../assets/images/1x1-no_bg.png";
 
+const TerminalModal = lazy(() => import("../common/TerminalModal"));
+
 function Hero() {
+  const [isTerminalOpen, setIsTerminalOpen] = useState(false);
+  const [isTerminalMinimized, setIsTerminalMinimized] = useState(false);
+
+  const handleProfileClick = () => {
+    if (!isTerminalOpen) {
+      setIsTerminalOpen(true);
+      setIsTerminalMinimized(false);
+    } else if (isTerminalMinimized) {
+      setIsTerminalMinimized(false);
+    }
+  };
+
   const scrollToSection = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
@@ -21,7 +35,11 @@ function Hero() {
 
       <div className="relative z-10 max-w-4xl w-full text-center flex flex-col items-center">
         {/* Profile Photo */}
-        <div className="relative w-32 h-32 md:w-48 md:h-48 mb-8 mx-auto animate-fade-in group">
+        <button
+          onClick={handleProfileClick}
+          className="relative w-32 h-32 md:w-48 md:h-48 mb-8 mx-auto animate-fade-in group cursor-pointer focus:outline-none focus:ring-4 focus:ring-accent-light dark:focus:ring-accent-dark focus:ring-offset-4 dark:focus:ring-offset-bg-dark rounded-full transition-transform hover:scale-105 active:scale-95"
+          aria-label="Open hidden terminal"
+        >
           {/* Ambient Aura */}
           <div className="absolute inset-0 -z-10 pointer-events-none scale-[2.5] rounded-full bg-gradient-to-tr from-indigo-200/60 via-blue-100/40 to-transparent dark:from-indigo-600/25 dark:via-purple-600/20 dark:to-transparent blur-3xl opacity-70 group-hover:opacity-100 transition-opacity duration-500"></div>
           <div className="relative w-full h-full rounded-full bg-bg-light dark:bg-bg-dark p-1">
@@ -38,7 +56,7 @@ function Hero() {
               />
             </div>
           </div>
-        </div>
+        </button>
 
         {/* Name */}
         <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-up">
@@ -105,6 +123,16 @@ function Hero() {
           <ArrowDownIcon className="w-8 h-8" />
         </div>
       </button>
+
+      {/* Hidden Terminal Easter Egg */}
+      <Suspense fallback={null}>
+        <TerminalModal 
+          isOpen={isTerminalOpen} 
+          onClose={() => setIsTerminalOpen(false)} 
+          isMinimized={isTerminalMinimized}
+          setIsMinimized={setIsTerminalMinimized}
+        />
+      </Suspense>
     </section>
   );
 }
