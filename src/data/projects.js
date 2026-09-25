@@ -1,23 +1,43 @@
 export const projects = [
   {
-    id: 1,
-    title: "Adaptive API Rate Limiter",
-    role: "Project Manager & Lead Researcher",
+    id: 11,
+    title: "SignKo",
+    role: "Mobile App Developer",
     description:
-      "An intelligent intrusion detection and prevention system implementing adaptive rate limiting through heuristic pattern classification and token bucket optimization algorithms.",
+      "A bidirectional Filipino Sign Language translation system featuring a mobile app integrated with BLE-enabled smart gloves.",
     longDescription:
-      "Undergraduate thesis project developing an advanced IDS/IPS solution that dynamically adjusts API rate limits based on real-time traffic patterns. The system employs machine learning-based heuristic classification to distinguish legitimate traffic from potential threats, combined with an optimized token bucket algorithm for granular traffic control and DDoS mitigation.",
-    technologies: ["Python", "Redis", "Docker", "Locust", "FastAPI"],
+      "Developed the frontend and core architecture of a Flutter-based mobile application designed to bridge communication gaps for the deaf community. The app features a minimalist dynamic theme engine, real-time speech-to-text voice typing integration, and a modular Riverpod state management architecture. It is designed to interface over Bluetooth Low Energy (BLE) with custom hardware gloves running TinyML for gesture recognition, converting physical signs into digital text and vice versa through video synthesis.",
+    technologies: ["Flutter", "Dart", "Riverpod", "BLE", "Speech-to-Text"],
     features: [
-      "Heuristic Pattern Classification",
-      "Dynamic Rate Limit Adjustment",
-      "Real-time Threat Detection",
-      "Token Bucket Optimization",
-      "Anomaly Detection & Logging",
+      "Bidirectional Sign Language Translation",
+      "Real-time Speech-to-Text Voice Typing",
+      "Bluetooth Low Energy (BLE) Integration",
+      "Riverpod State Management Architecture",
+      "Dynamic Minimalist Theme Engine",
     ],
-    github: "https://github.com/waeijn/adaptive-api-rate-limiter",
+    github: "https://github.com/waeijn/signko",
     status: "In Progress",
-    date: "January 2026 – Present",
+    date: "September 2026 – Present",
+  },
+  {
+    id: 3,
+    title: "CORE THREADS",
+    role: "Project Manager & Game Designer",
+    description:
+      "A 1-bit retro MS-DOS terminal-style roguelite deckbuilder featuring tactical card combat and authentic low-res terminal aesthetics.",
+    longDescription:
+      "Game development project serving as Project Manager and Game Designer. Led cross-functional collaboration, sprint planning, and core architecture while designing tactical card mechanics, balancing gameplay loops, and crafting authentic 1-bit visual assets and terminal UI/UX.",
+    technologies: ["Unity 6", "C#", "Aseprite", "Git", "Project Management"],
+    features: [
+      "Tactical Card Combat & Deckbuilding",
+      "1-Bit Retro MS-DOS Terminal UI/UX",
+      "Original Pixel Art & Animated Sprites",
+      "Procedural Run & Encounter Progression",
+      "Sprint Planning & Milestone Architecture",
+    ],
+    github: "https://github.com/waeijn/core-threads",
+    status: "In Progress",
+    date: "August 2026 – Present",
   },
   {
     id: 2,
@@ -47,24 +67,24 @@ export const projects = [
     date: "May 2026 – Present",
   },
   {
-    id: 3,
-    title: "CORE THREADS",
-    role: "Project Manager & Game Designer",
+    id: 1,
+    title: "Adaptive API Rate Limiter",
+    role: "Project Manager & Lead Researcher",
     description:
-      "A 1-bit retro MS-DOS terminal-style roguelite deckbuilder featuring tactical card combat and authentic low-res terminal aesthetics.",
+      "An intelligent intrusion detection and prevention system implementing adaptive rate limiting through heuristic pattern classification and token bucket optimization algorithms.",
     longDescription:
-      "Game development project serving as Project Manager and Game Designer. Led cross-functional collaboration, sprint planning, and core architecture while designing tactical card mechanics, balancing gameplay loops, and crafting authentic 1-bit visual assets and terminal UI/UX.",
-    technologies: ["Unity 6", "C#", "Aseprite", "Git", "Project Management"],
+      "Undergraduate thesis project developing an advanced IDS/IPS solution that dynamically adjusts API rate limits based on real-time traffic patterns. The system employs machine learning-based heuristic classification to distinguish legitimate traffic from potential threats, combined with an optimized token bucket algorithm for granular traffic control and DDoS mitigation.",
+    technologies: ["Python", "Redis", "Docker", "Locust", "FastAPI"],
     features: [
-      "Tactical Card Combat & Deckbuilding",
-      "1-Bit Retro MS-DOS Terminal UI/UX",
-      "Original Pixel Art & Animated Sprites",
-      "Procedural Run & Encounter Progression",
-      "Sprint Planning & Milestone Architecture",
+      "Heuristic Pattern Classification",
+      "Dynamic Rate Limit Adjustment",
+      "Real-time Threat Detection",
+      "Token Bucket Optimization",
+      "Anomaly Detection & Logging",
     ],
-    github: "https://github.com/waeijn/core-threads",
+    github: "https://github.com/waeijn/adaptive-api-rate-limiter",
     status: "In Progress",
-    date: "August 2026 – Present",
+    date: "January 2026 – Present",
   },
   {
     id: 8,
@@ -146,7 +166,7 @@ export const projects = [
     status: "Completed",
     date: "December 2025",
   },
-    {
+  {
     id: 10,
     title: "Task Management System",
     role: "Team Lead & Full Stack Developer",
@@ -154,7 +174,7 @@ export const projects = [
       "A minimalist, high-performance task management dashboard designed with a focus on clean UI/UX, fast interactions, and zero clutter.",
     longDescription:
       "Led a cross-functional team of 5 members in building a React frontend and a RESTful Laravel 11 backend, this project features a Figma-inspired minimalist UI with a deep matte slate dark mode. It includes advanced real-time task filtering, flexible grid and list views, and comprehensive category and priority organization. The entire application is fully containerized using Docker for seamless local development and deployment.",
-    technologies: ["React", "Laravel 11", "PHP", "SQLite", "Docker"],
+    technologies: ["React", "Laravel 11", "PHP", "MySQL", "phpMyAdmin", "Docker"],
     features: [
       "Minimalist Figma-Inspired Dashboard UI",
       "Advanced Filtering & Search Mechanisms",
@@ -166,7 +186,7 @@ export const projects = [
     status: "Completed",
     date: "October 2025",
   },
-{
+  {
     id: 6,
     title: "PageTurn",
     role: "Team Lead & Full-Stack Developer",
