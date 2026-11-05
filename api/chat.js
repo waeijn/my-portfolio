@@ -100,10 +100,14 @@ export default async function handler(req, res) {
 
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) {
+    console.error("Missing GEMINI_API_KEY in environment variables.");
     res.statusCode = 500;
     res.setHeader("Content-Type", "application/json");
     return res.end(
-      JSON.stringify({ error: "Server missing GEMINI_API_KEY configuration." }),
+      JSON.stringify({
+        error:
+          "The AI assistant is temporarily offline. In the meantime, type 'help' to explore John's portfolio via terminal commands!",
+      }),
     );
   }
 
@@ -140,7 +144,7 @@ export default async function handler(req, res) {
       },
     });
 
-    let lastError = "Failed to generate response from Gemini.";
+    let lastError = null;
     let lastStatus = 503;
 
     for (const model of FALLBACK_MODELS) {
@@ -169,7 +173,8 @@ export default async function handler(req, res) {
         }
 
         lastStatus = response.status;
-        lastError = data?.error?.message || lastError;
+        lastError = data?.error?.message || `HTTP ${response.status}`;
+        console.warn(`Model ${model} failed with status ${response.status}:`, lastError);
 
         // If 503 (high demand), 429 (rate limit), or 404, try the next fallback model
         if (
@@ -182,20 +187,30 @@ export default async function handler(req, res) {
           break;
         }
       } catch (fetchErr) {
-        lastError = fetchErr.message || lastError;
+        lastError = fetchErr.message;
+        console.warn(`Fetch error on model ${model}:`, fetchErr);
         continue;
       }
     }
 
+    // Friendly visitor-facing message instead of raw Google API or developer errors
+    const userFriendlyMessage =
+      lastStatus === 503 || lastStatus === 429
+        ? "I'm receiving higher traffic than usual right now. Please try again in a few seconds, or type 'help' for instant commands!"
+        : "I'm having a little trouble connecting at the moment. Please try again shortly, or type 'help' to explore John's work directly.";
+
     res.statusCode = lastStatus;
     res.setHeader("Content-Type", "application/json");
-    return res.end(JSON.stringify({ error: lastError }));
+    return res.end(JSON.stringify({ error: userFriendlyMessage }));
   } catch (err) {
     console.error("Chat API exception:", err);
     res.statusCode = 500;
     res.setHeader("Content-Type", "application/json");
     return res.end(
-      JSON.stringify({ error: "Internal server error connecting to AI." }),
+      JSON.stringify({
+        error:
+          "I ran into a temporary glitch. Please try again in a few moments, or type 'help' for terminal commands!",
+      }),
     );
   }
 }

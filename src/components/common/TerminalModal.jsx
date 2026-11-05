@@ -140,24 +140,38 @@ export default function TerminalModal({
   const askAi = useCallback(
     async (question) => {
       setIsThinking(true);
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 12000);
+
       try {
         const res = await fetch("/api/chat", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
+          signal: controller.signal,
           body: JSON.stringify({
             message: question,
             chatHistory: aiChatHistory,
           }),
         });
 
-        const data = await res.json();
+        clearTimeout(timeoutId);
+
+        let data = {};
+        try {
+          data = await res.json();
+        } catch {
+          data = {};
+        }
 
         if (!res.ok || data.error) {
+          const fallbackMsg =
+            data.error ||
+            "I'm experiencing higher traffic than usual right now. Please try again in a few moments, or type 'help' for instant commands!";
           setHistory((prev) => [
             ...prev,
             {
               type: "system",
-              content: `waeijn-ai: ${data.error || "Service unavailable. Try 'help' for built-in commands."}`,
+              content: `waeijn-ai: ${fallbackMsg}`,
             },
           ]);
         } else {
@@ -169,13 +183,16 @@ export default function TerminalModal({
             { role: "model", text: reply },
           ]);
         }
-      } catch {
+      } catch (err) {
+        clearTimeout(timeoutId);
+        const isTimeout = err?.name === "AbortError";
         setHistory((prev) => [
           ...prev,
           {
             type: "system",
-            content:
-              "waeijn-ai: Could not reach AI endpoint. Type 'help' for offline commands.",
+            content: isTimeout
+              ? "waeijn-ai: Request timed out. Feel free to try again in a few seconds, or type 'help' for instant commands."
+              : "waeijn-ai: I'm having a little trouble connecting right now. Please try again shortly, or explore John's work using 'help'.",
           },
         ]);
       } finally {
