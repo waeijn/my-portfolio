@@ -18,7 +18,7 @@ export const personalInfo = {
 
     // Background
     background:
-      "Currently in my fourth year, I work across systems development, project management, and cybersecurity. My recent work focuses on security telemetry, network defense, and building robust, attack-resilient applications.",
+      "Currently in my fourth year as a Computer Science student at the University of Cabuyao (Dean's Lister and Best in Thesis Candidate), I work across systems development, project management, and cybersecurity. My recent work focuses on security telemetry, network defense, and building robust, attack-resilient applications.",
 
     // Values
     values:
