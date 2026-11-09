@@ -51,7 +51,7 @@ const COMMANDS = {
   ],
   projects: () => [
     "1. SignKo                      [In Progress]",
-    "2. CORE THREADS                [In Progress]",
+    "2. CORE THREADS                [Completed]",
     "3. SentiRate                   [Completed]",
     "4. Developer Portfolio v2.0    [Completed]",
     "5. SOC Home Lab                [Completed]",

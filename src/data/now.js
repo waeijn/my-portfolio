@@ -1,9 +1,9 @@
 export const now = {
   focus:
-    "Developing SignKo (bidirectional Filipino Sign Language translation app with TinyML gloves) and CORE THREADS.",
+    "Engineering SignKo (bidirectional Filipino Sign Language translation app with TinyML smart gloves).",
   reading: "East of Eden by John Steinbeck.",
   learning:
-    "Embedded TinyML, BLE pipelines, and game development in Unity 6.",
+    "Embedded TinyML, BLE pipelines, and security telemetry.",
   exploring:
     "1-bit retro MS-DOS terminal styling and the Elden Ring DLC: Shadow of the Erdtree.",
 };

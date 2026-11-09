@@ -36,8 +36,8 @@ export const projects = [
       "Agile Milestone-Driven Development",
     ],
     github: "https://github.com/waeijn/core-threads",
-    status: "In Progress",
-    date: "August 2026 – Present",
+    status: "Completed",
+    date: "August 2026 – October 2026",
   },
   {
     id: 1,
