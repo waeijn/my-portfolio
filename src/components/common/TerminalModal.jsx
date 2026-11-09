@@ -52,9 +52,9 @@ const COMMANDS = {
   projects: () => [
     "1. SignKo                      [In Progress]",
     "2. CORE THREADS                [In Progress]",
-    "3. SOC Home Lab                [In Progress]",
-    "4. Adaptive API Rate Limiter   [In Progress]",
-    "5. Developer Portfolio v2.0    [Completed]",
+    "3. SentiRate                   [Completed]",
+    "4. Developer Portfolio v2.0    [Completed]",
+    "5. SOC Home Lab                [Completed]",
     "6. Secure Enterprise Network   [Completed]",
     "7. AuraTech                    [Completed]",
     "8. Wilma                       [Completed]",

@@ -21,6 +21,22 @@ export const certifications = [
     link: "https://coursera.org/share/3d8446c8519741e8f032d03bfec24b48",
   },
   {
+    id: 8,
+    title: "Cyber Threat Management",
+    issuer: "Cisco Networking Academy (DICT)",
+    icon: "cisco",
+    date: "March 2026",
+    description:
+      "Explored governance, threat intelligence, and vulnerability management frameworks to identify, monitor, and mitigate enterprise cyber threats.",
+    skills: [
+      "Cyber Threat Intelligence",
+      "Threat Management",
+      "Vulnerability Management",
+      "Incident Response",
+    ],
+    link: "",
+  },
+  {
     id: 2,
     title: "IT Fundamentals for Cybersecurity Specialization",
     issuer: "IBM",
@@ -42,6 +58,22 @@ export const certifications = [
     link: "https://coursera.org/share/0ebc47a0e600a3edefa54b797b6f3bf6",
   },
   {
+    id: 5,
+    title: "Networking Basics",
+    issuer: "Cisco Networking Academy",
+    icon: "cisco",
+    date: "January 2026",
+    description:
+      "Comprehensive study of network architectures, IP addressing, and the fundamentals of Ethernet and wireless communications.",
+    skills: [
+      "TCP/IP",
+      "Subnetting",
+      "Routing & Switching",
+      "Network Security",
+    ],
+    link: "https://www.credly.com/badges/9ba7b187-046c-4732-873d-c0ef11275298/public_url",
+  },
+  {
     id: 3,
     title: "Lean Six Sigma Yellow Belt",
     issuer: "MF Treinamentos",
@@ -49,7 +81,11 @@ export const certifications = [
     date: "January 2026",
     description:
       "Introductory level for project team members, covering process mapping and the DMAIC framework.",
-    skills: ["Process Mapping", "Root Cause Analysis", "DMAIC Application"],
+    skills: [
+      "Process Mapping",
+      "Root Cause Analysis",
+      "DMAIC Application",
+    ],
     link: "",
   },
   {
@@ -60,19 +96,12 @@ export const certifications = [
     date: "January 2026",
     description:
       "Foundational certification focused on the basics of Lean Six Sigma methodology, process thinking, and continuous improvement mindsets.",
-    skills: ["Process Thinking", "Waste Identification", "Improvement Mindset"],
+    skills: [
+      "Process Thinking",
+      "Waste Identification",
+      "Improvement Mindset",
+    ],
     link: "",
-  },
-  {
-    id: 5,
-    title: "Networking Basics",
-    issuer: "Cisco Networking Academy",
-    icon: "cisco",
-    date: "January 2026",
-    description:
-      "Comprehensive study of network architectures, IP addressing, and the fundamentals of Ethernet and wireless communications.",
-    skills: ["TCP/IP", "Subnetting", "Routing & Switching", "Network Security"],
-    link: "https://www.credly.com/badges/9ba7b187-046c-4732-873d-c0ef11275298/public_url",
   },
   {
     id: 6,
@@ -82,7 +111,12 @@ export const certifications = [
     date: "December 2025",
     description:
       "Achieved student-level credential for explaining common cyber threats, attacks, vulnerabilities, and protection methods.",
-    skills: ["Cybersecurity", "Networking", "Cyber Threats", "Online Safety"],
+    skills: [
+      "Cybersecurity",
+      "Networking",
+      "Cyber Threats",
+      "Online Safety",
+    ],
     link: "https://www.credly.com/badges/f30e0048-38ba-4646-b125-c51baa80e5a7/public_url",
   },
   {
@@ -93,7 +127,12 @@ export const certifications = [
     date: "December 2024",
     description:
       "A comprehensive certification (approx. 300 hours) covering modern responsive web design principles, HTML5, and CSS3.",
-    skills: ["HTML5", "CSS3", "Responsive Design", "Web Accessibility"],
+    skills: [
+      "HTML5",
+      "CSS3",
+      "Responsive Design",
+      "Web Accessibility",
+    ],
     link: "https://freecodecamp.org/certification/waeijn/responsive-web-design",
   },
 ];
