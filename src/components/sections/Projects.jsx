@@ -38,6 +38,11 @@ function Projects() {
                       {project.role}
                     </p>
                   )}
+                  {project.award && (
+                    <span className="inline-flex items-center gap-1 px-2.5 py-0.5 mt-2 rounded-full text-xs font-semibold bg-accent-light/10 dark:bg-accent-dark/10 text-accent-light dark:text-accent-dark border border-accent-light/25 dark:border-accent-dark/25 w-fit">
+                      ★ {project.award}
+                    </span>
+                  )}
                 </div>
                 <div className="flex flex-col items-end shrink-0 ml-4">
                   <span className="text-xs text-text-light-muted dark:text-text-dark-muted mb-2">

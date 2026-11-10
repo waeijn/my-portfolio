@@ -23,12 +23,14 @@ export const projects = [
     id: 3,
     title: "CORE THREADS",
     role: "Project Manager & Game Designer",
+    award: "Software Expo Candidate",
     description:
-      "A 2D top-down psychological roguelike narrative adventure developed in Unity 6, exploring themes of resilience, identity, and personal struggle.",
+      "A 2D top-down psychological roguelike narrative adventure developed in Unity 6, exploring themes of resilience, identity, and personal struggle. Featured as a Software Expo Candidate.",
     longDescription:
-      "A personal game development endeavor serving as both an artistic expression and a rigorous technical challenge. Built from the ground up in Unity 6, CORE THREADS blends challenging real-time combat loops with deep, branching dialogue trees. The architecture leverages modern C# scripting practices, modular state machines for enemy behaviors, and hand-crafted pixel art created in Aseprite. The narrative is heavily character-driven, featuring reactive environmental storytelling and atmospheric audio design.",
+      "Featured as a Software Expo Candidate, this personal game development endeavor blends challenging real-time combat loops with deep, branching dialogue trees. Built from the ground up in Unity 6, the architecture leverages modern C# scripting practices, modular state machines for enemy behaviors, reactive environmental storytelling, and hand-crafted pixel art created in Aseprite.",
     technologies: ["Unity 6", "C#", "Aseprite", "Git", "Project Management"],
     features: [
+      "Software Expo Candidate",
       "Modular State Machine for Enemy AI",
       "Branching Dialogue & Event Architecture",
       "Original Hand-Drawn Pixel Art Assets",
@@ -43,12 +45,14 @@ export const projects = [
     id: 1,
     title: "SentiRate",
     role: "Team Lead",
+    award: "Best in Thesis Candidate",
     description:
-      "An intelligent adaptive rate-limiting middleware system implementing heuristic pattern classification and token bucket optimization algorithms to protect API architectures.",
+      "An intelligent adaptive rate-limiting middleware system implementing heuristic pattern classification and token bucket optimization algorithms to protect API architectures. Recognized as a Best in Thesis Candidate.",
     longDescription:
       "Led a 4-member undergraduate thesis team developing an advanced adaptive rate-limiting middleware solution that dynamically regulates API traffic. The system employs heuristic pattern classification and token bucket filters in FastAPI to distinguish legitimate traffic from potential threats, with system resilience validated through rigorous Locust traffic simulations and technical audits.",
     technologies: ["Python", "FastAPI", "Redis", "Docker", "Locust"],
     features: [
+      "Best in Thesis Candidate",
       "Heuristic Pattern Classification",
       "Dynamic Rate Limit Adjustment",
       "Real-time Threat Detection",
